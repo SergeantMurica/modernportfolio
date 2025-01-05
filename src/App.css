@@ -14,14 +14,15 @@ nav a {
     margin: 0 8px;
     padding: 5px 10px;
     background-color: #FFFFFF;
-    border: 2px solid #F7E39C;
+    border: 2px solid #ffbd59;
     border-radius: 5px;
     transition: background-color 0.3s, color 0.3s;
 }
 
 nav a:hover {
-    color: #F7E39C;
+    color: #272727;
     background-color: #FFFFFF;
+    border: 2px solid #004aad;
 }
 
 .link_container {

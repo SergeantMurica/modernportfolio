@@ -1,15 +1,45 @@
 .timeline {
-    padding: 0 !important;
+    padding: 0px;
 }
 
 .timeline .timeline_header {
-    padding: 10px;
+    padding: 5px;
 }
 
 .timeline .timeline_first {
-    width: 100%;
-    height: 100%;
-    float: left;
-    padding: 10px;
-    min-height: 80px;
+    min-height: 100px;
+}
+
+.timeline .MuiTimeline-root {
+    min-height: 0px;
+}
+
+.timeline .MuiTimelineItem-missingOppositeContent:before {
+    display: none;
+}
+
+.timeline .timeline_dot_header {
+    color: #ffbd59;
+    background-color: #004aad;
+    font-size: small;
+    padding: 1px;
+}
+
+.timeline .timeline_dot {
+    color: #ffbd59;
+    border-color: #004aad;
+    padding: 1px;
+}
+
+.timeline .MuiTimelineConnector-root {
+    background-color: #ffbd59;
+}
+
+.timeline .timeline_separator {
+    padding-left: 12px;
+}
+
+.timeline .timeline_content {
+    padding: 0px;
+    margin-bottom: 20px;
 }
