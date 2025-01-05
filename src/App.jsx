@@ -9,23 +9,24 @@ import Resume from "./pages/Resume/Resume.jsx";
 import Blog from "./pages/Blog/Blog.jsx";
 import Contact from "./pages/Contact/Contact.jsx";
 import './App.css'
-import {Home} from "@mui/icons-material";
 
 const NavigationBar = () => {
     return (
-        <nav>
-            <Link to="/Portfolio">Portfolio</Link>
-            <Link to="/Resume">Resume</Link>
-            <Link to="/Blog">Blog</Link>
-            <Link to="/Contact">Contact</Link>
-        </nav>
+        <div className="link_container">
+            <nav>
+                <Link to="/Portfolio">Portfolio</Link>
+                <Link to="/Resume">Resume</Link>
+                <Link to="/Blog">Blog</Link>
+                <Link to="/Contact">Contact</Link>
+            </nav>
+        </div>
     );
 };
 
 function App() {
 
   return (
-    <Container>
+    <Container className="main_container">
       <Grid2 container spacing={2}>
         <Grid2 item size={{ xs: 12, sm: 6, md: 4, lg: 3}}>
           <Profile/>
