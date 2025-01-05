@@ -1,5 +1,7 @@
 import React from 'react'
 import {Typography} from "@mui/material";
+import CustomTimeline from '../Timeline/CustomTimeline.jsx';
+
 import './Profile.css'
 
 const Portfolio = () => {
@@ -13,7 +15,7 @@ const Portfolio = () => {
                 <img src={'./src/assets/images/ProfileImg.jpg'} alt=""/>
             </figure>
             <div className="profile_description">
-                Insert Timeline
+                <CustomTimeline/>
                 <br/>
                 <button>My Button</button>
             </div>

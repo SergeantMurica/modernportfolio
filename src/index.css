@@ -1,0 +1,16 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: 'Open Sans', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    overflow-x: hidden;
+    background: white url("./assets/images/background.png");
+    background-repeat: round;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+}
