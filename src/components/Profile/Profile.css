@@ -2,16 +2,16 @@
     -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     -moz-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    margin: auto;
-    padding: 0px;
+    padding: 10px 0 10px 0;
     background: white;
+    min-width: fit-content;
 }
 
 .profile {
     background-color: white;
     border-radius: 6px;
     width: 100%;
-    display: inline-block;
+    display: flex;
 }
 .profile_name {
     line-height: 18px;
@@ -43,3 +43,45 @@
     padding: 20px;
     text-align: start;
 }
+
+.profile_information {
+    top: 0;
+    left: 0;
+    margin: -44px 10px 30px 0;
+}
+
+.profile_information .timeline .timeline_item_text {
+    margin: 2px 0 12px 0;
+}
+
+.timeline_item_text {
+    font-size: 13.5px !important;
+    color: gray;
+    font-weight: 400;
+}
+
+.timeline_item_text > span {
+    color: black;
+    margin-right: 5px;
+}
+
+.timeline_item_text > a {
+    color: gray;
+    text-decoration: none;
+    background-color: #FFFFFF;
+    border: 2px solid #ffbd59;
+}
+
+.timeline_item_text > a:hover {
+    color: #272727;
+    background-color: #FFFFFF;
+    border: 2px solid #004aad;
+}
+
+.resume_btn {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin: 10px 0 0 0;
+}
+

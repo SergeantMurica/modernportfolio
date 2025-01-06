@@ -36,10 +36,11 @@
 }
 
 .timeline .timeline_separator {
-    padding-left: 12px;
+    padding: 0 12px 0 12px;
 }
 
 .timeline .timeline_content {
     padding: 0px;
     margin-bottom: 20px;
 }
+
