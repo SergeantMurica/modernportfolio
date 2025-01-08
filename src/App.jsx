@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
-import { BrowserRouter, Link, Route, Routes } from "react-router-dom";
 import {Container, Grid2} from "@mui/material";
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Profile from "./components/Profile/Profile.jsx";
 import Header from "./components/Header/Header.jsx";
 import Footer from "./components/Footer/Footer.jsx";
@@ -8,6 +8,7 @@ import Portfolio from './pages/Portfolio/Portfolio.jsx';
 import Resume from "./pages/Resume/Resume.jsx";
 import Blog from "./pages/Blog/Blog.jsx";
 import Contact from "./pages/Contact/Contact.jsx";
+import Homepage from "./pages/Home/Home.jsx";
 import './App.css'
 
 
@@ -20,7 +21,18 @@ function App() {
           <Profile/>
         </Grid2>
         <Grid2 item size="auto" >
-          <Header/>
+          <Router>
+            <Header/>
+            <div className="header_container">
+              <Routes>
+                <Route path="/" element={<Homepage/>}/>
+                <Route path="/Portfolio" element={<Portfolio/>}/>
+                <Route path="/Resume" element={<Resume/>}/>
+                <Route path="/Blog" element={<Blog/>}/>
+                <Route path="/Contact" element={<Contact/>}/>
+              </Routes>
+            </div>
+          </Router>
           <Footer/>
         </Grid2>
       </Grid2>

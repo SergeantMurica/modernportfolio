@@ -5,6 +5,7 @@
     padding: 10px 0 10px 0;
     background: white;
     min-width: fit-content;
+    border-radius: 6px;
 }
 
 .profile {
