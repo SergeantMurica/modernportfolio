@@ -16,23 +16,12 @@ function App() {
 
   return (
     <Container className="main_container">
-      <Grid2 container spacing={10}>
+      <Grid2 container spacing={{xs: 1.5, sm: 1.5, md: 10, lg: 30 }}>
         <Grid2 item size={{ xs: 12, sm: 6, md: 4, lg: 3}}>
           <Profile/>
         </Grid2>
-        <Grid2 item size="auto" >
-          <Router>
-            <Header/>
-            <div className="header_container">
-              <Routes>
-                <Route path="/" element={<Homepage/>}/>
-                <Route path="/Portfolio" element={<Portfolio/>}/>
-                <Route path="/Resume" element={<Resume/>}/>
-                <Route path="/Blog" element={<Blog/>}/>
-                <Route path="/Contact" element={<Contact/>}/>
-              </Routes>
-            </div>
-          </Router>
+        <Grid2 item size='grow' >
+          <Header/>
           <Footer/>
         </Grid2>
       </Grid2>
