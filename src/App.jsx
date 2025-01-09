@@ -1,14 +1,10 @@
-import React, { useState } from 'react'
+import React from 'react'
 import {Container, Grid2} from "@mui/material";
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import 'bootstrap/dist/js/bootstrap.bundle.min.js';
 import Profile from "./components/Profile/Profile.jsx";
 import Header from "./components/Header/Header.jsx";
 import Footer from "./components/Footer/Footer.jsx";
-import Portfolio from './pages/Portfolio/Portfolio.jsx';
-import Resume from "./pages/Resume/Resume.jsx";
-import Blog from "./pages/Blog/Blog.jsx";
-import Contact from "./pages/Contact/Contact.jsx";
-import Homepage from "./pages/Home/Home.jsx";
 import './App.css'
 
 

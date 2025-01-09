@@ -1,5 +1,4 @@
 import React from 'react';
-import HomeIcon from '@mui/icons-material/Home';
 import CustomButton from "../Button/Button.jsx";
 import {
     Nav,
@@ -7,9 +6,11 @@ import {
 } from "react-bootstrap";
 import { NavLink, useLocation, BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import 'bootstrap/dist/js/bootstrap.bundle.min.js';
 import resumeData from "../../utils/resumeData.jsx";
 import websiteData from "../../utils/websiteData.jsx";
 import { Telegram } from "@mui/icons-material";
+import HomeIcon from '@mui/icons-material/Home';
 import './Header.css';
 import Homepage from "../../pages/Home/Home.jsx";
 import Portfolio from "../../pages/Portfolio/Portfolio.jsx";
@@ -30,35 +31,44 @@ const NavigationBar = () => {
                     </Navbar.Brand>
                 </Nav.Link>
 
-                <Navbar.Toggle />
+                <Navbar.Toggle aria-controls="navbar-collapse" />
 
-                <Navbar.Collapse>
-                    <Nav>
-                        {Object.keys(websiteData.pages).map((key, index) => (
-                            <Nav.Link
-                                as={NavLink}
-                                to={websiteData.pages[key].path}
-                                key={index}
-                                className={location.pathname === websiteData.pages[key].path ? "active_link" : "inactive_link"}
-                            >
-                                {websiteData.pages[key].name}
-                            </Nav.Link>
-                        ))}
-                    </Nav>
 
-                    <div className="socials_container">
-                        {Object.keys(resumeData.socials).map(key => (
-                            <a key={key} href={resumeData.socials[key].url} target="_blank" rel="noopener noreferrer">
-                                {resumeData.socials[key].icon}
-                            </a>
-                        ))}
-                        <CustomButton text="Email Me" icon={<Telegram />} link="mailto:castroalexander1995@outlook.com" />
+                <Navbar.Collapse id="navbar-collapse">
+
+                {/* Flex Container for Nav and Socials */}
+                    <div className="header_container">
+                        {/* Navigation Links */}
+                        <Nav className="nav_links">
+                            {Object.keys(websiteData.pages).map((key, index) => (
+                                <Nav.Link
+                                    as={NavLink}
+                                    to={websiteData.pages[key].path}
+                                    key={index}
+                                    className={location.pathname === websiteData.pages[key].path ? "active_link" : "inactive_link"}
+                                >
+                                    {websiteData.pages[key].name}
+                                </Nav.Link>
+                            ))}
+                        </Nav>
+
+                        {/* Socials and Button */}
+                        <div className="socials_container">
+                            {Object.keys(resumeData.socials).map(key => (
+                                <a key={key} href={resumeData.socials[key].url} target="_blank" rel="noopener noreferrer">
+                                    {resumeData.socials[key].icon}
+                                </a>
+                            ))}
+                            <CustomButton text="Email Me" icon={<Telegram />} link="mailto:castroalexander1995@outlook.com" />
+                        </div>
                     </div>
                 </Navbar.Collapse>
             </Navbar>
         </React.Fragment>
     );
 };
+
+
 
 const Header = () => {
     return (
