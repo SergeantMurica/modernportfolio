@@ -1,12 +1,23 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import CustomButton from "../Button/Button.jsx";
 import {
+    Button,
+    Form,
+    FormGroup,
+    FormControl,
     Nav,
     Navbar,
+    NavItem,
+    NavDropdown,
+    DropdownToggle,
+    DropdownMenu,
+    DropdownItem,
+    Dropdown,
+    DropdownButton,
+    Container
 } from "react-bootstrap";
-import { NavLink, useLocation, BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import 'bootstrap/dist/js/bootstrap.bundle.min.js';
+import { NavLink, useLocation, BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
 import resumeData from "../../utils/resumeData.jsx";
 import websiteData from "../../utils/websiteData.jsx";
 import { Telegram } from "@mui/icons-material";
@@ -17,70 +28,40 @@ import Portfolio from "../../pages/Portfolio/Portfolio.jsx";
 import Resume from "../../pages/Resume/Resume.jsx";
 import Blog from "../../pages/Blog/Blog.jsx";
 import Contact from "../../pages/Contact/Contact.jsx";
-
-const NavigationBar = () => {
-    const location = useLocation();
-
-    return (
-        <React.Fragment>
-            <Navbar expand="lg" sticky="top" className="header">
-                {/* Home Link */}
-                <Nav.Link as={NavLink} to="/">
-                    <Navbar.Brand className="header_home">
-                        <HomeIcon />
-                    </Navbar.Brand>
-                </Nav.Link>
-
-                <Navbar.Toggle aria-controls="navbar-collapse" />
-
-
-                <Navbar.Collapse id="navbar-collapse">
-
-                {/* Flex Container for Nav and Socials */}
-                    <div className="header_container">
-                        {/* Navigation Links */}
-                        <Nav className="nav_links">
-                            {Object.keys(websiteData.pages).map((key, index) => (
-                                <Nav.Link
-                                    as={NavLink}
-                                    to={websiteData.pages[key].path}
-                                    key={index}
-                                    className={location.pathname === websiteData.pages[key].path ? "active_link" : "inactive_link"}
-                                >
-                                    {websiteData.pages[key].name}
-                                </Nav.Link>
-                            ))}
-                        </Nav>
-
-                        {/* Socials and Button */}
-                        <div className="socials_container">
-                            {Object.keys(resumeData.socials).map(key => (
-                                <a key={key} href={resumeData.socials[key].url} target="_blank" rel="noopener noreferrer">
-                                    {resumeData.socials[key].icon}
-                                </a>
-                            ))}
-                            <CustomButton text="Email Me" icon={<Telegram />} link="mailto:castroalexander1995@outlook.com" />
-                        </div>
-                    </div>
-                </Navbar.Collapse>
-            </Navbar>
-        </React.Fragment>
-    );
-};
+import NavigationBar from "./NavigationBar.jsx";
+import NavigationDrop from "./NavigationDrop.jsx";
 
 
 
 const Header = () => {
+
+    const [isMobile, setIsMobile] = useState(window.innerWidth < 768);
+
+    useEffect(() => {
+        const handleResize = () => {
+            setIsMobile(window.innerWidth < 768);
+        };
+
+        window.addEventListener('resize', handleResize);
+
+        // Cleanup event listener on component unmount
+        return () => {
+            window.removeEventListener('resize', handleResize);
+        };
+    }, []);
+
     return (
         <Router>
-            <NavigationBar />
+            <div>
+                {isMobile ? <NavigationDrop /> : <NavigationBar />}
+            </div>
             <div className="header_container">
                 <Routes>
-                    <Route path="/" element={<Homepage />} />
-                    <Route path="/Portfolio" element={<Portfolio />} />
-                    <Route path="/Resume" element={<Resume />} />
-                    <Route path="/Blog" element={<Blog />} />
-                    <Route path="/Contact" element={<Contact />} />
+                    <Route path="/" element={<Homepage/>}/>
+                    <Route path="/Portfolio" element={<Portfolio/>}/>
+                    <Route path="/Resume" element={<Resume/>}/>
+                    <Route path="/Blog" element={<Blog/>}/>
+                    <Route path="/Contact" element={<Contact/>}/>
                 </Routes>
             </div>
         </Router>

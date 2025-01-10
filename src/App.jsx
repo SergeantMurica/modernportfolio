@@ -12,11 +12,11 @@ function App() {
 
   return (
     <Container className="main_container">
-      <Grid2 container spacing={{xs: 1.5, sm: 1.5, md: 10, lg: 30 }}>
-        <Grid2 item size={{ xs: 12, sm: 6, md: 4, lg: 3}}>
+      <Grid2 container spacing={{xs: 1.5, sm: 1.5, md: 10, lg: 10 }}>
+        <Grid2 item size={{ xs: 12, sm: 12, md: 5, lg: 5}}>
           <Profile/>
         </Grid2>
-        <Grid2 item size='grow' >
+        <Grid2 item size='grow'>
           <Header/>
           <Footer/>
         </Grid2>
