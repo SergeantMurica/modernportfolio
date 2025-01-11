@@ -25,7 +25,7 @@ const Profile = () => {
                 <CustomTimeline icon={<PersonOutlineIcon/>}>
                     <CustomTimelineItem title="Current Job" text={resumeData.jobTitle}/>
                     <CustomTimelineItem title="Birthday" text={resumeData.birthday}/>
-                    <CustomTimelineItem title="Email" text={resumeData.email}/>
+                    <CustomTimelineItem title="Email" text={resumeData.email} last={true}/>
                 </CustomTimeline>
                 <div className="resume_btn">
                     <CustomButton text="Download CV" icon={<DownloadIcon/>}/>
