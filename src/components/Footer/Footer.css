@@ -1,0 +1,48 @@
+/* Footer Styles */
+.footer {
+    background-color: #121212; /* Dark background for contrast */
+    color: #ffffff; /* White text for contrast */
+    padding: 20px 40px; /* Comfortable padding */
+    display: flex;
+    flex-direction: column; /* Stack items for smaller screens */
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    box-shadow: 0 -4px 10px rgba(0, 0, 0, 0.2); /* Subtle shadow for separation */
+}
+
+/* Footer Left Section */
+.footer_left, .footer_right {
+    margin: 10px 0;
+}
+
+/* Footer Text */
+.footer_text {
+    font-size: 0.9rem; /* Slightly smaller text for elegance */
+    line-height: 1.6;
+    margin: 0;
+}
+
+/* Footer Links */
+.footer_link {
+    color: #ffbd59; /* Highlight links with a bright color */
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease-in-out;
+}
+
+.footer_link:hover {
+    color: #ff8c00; /* Slightly darker on hover */
+    text-decoration: underline; /* Underline effect on hover */
+}
+
+/* Responsive Design */
+@media (min-width: 768px) {
+    .footer {
+        flex-direction: row; /* Align items horizontally on larger screens */
+    }
+
+    .footer_left, .footer_right {
+        text-align: left;
+    }
+}
