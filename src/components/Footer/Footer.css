@@ -1,14 +1,18 @@
 /* Footer Styles */
 .footer {
-    background-color: #121212; /* Dark background for contrast */
-    color: #ffffff; /* White text for contrast */
+    color: black; /* Black text for contrast */
+    margin: auto;
+    background-color: #f9f9f9;
+    border-radius: 10px;
     padding: 20px 40px; /* Comfortable padding */
     display: flex;
     flex-direction: column; /* Stack items for smaller screens */
     justify-content: space-between;
     align-items: center;
     text-align: center;
-    box-shadow: 0 -4px 10px rgba(0, 0, 0, 0.2); /* Subtle shadow for separation */
+    -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    -moz-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 /* Footer Left Section */
@@ -44,5 +48,12 @@
 
     .footer_left, .footer_right {
         text-align: left;
+    }
+}
+
+
+@media (max-width: 1199px) {
+    .navbar {
+        max-width: 600px;
     }
 }

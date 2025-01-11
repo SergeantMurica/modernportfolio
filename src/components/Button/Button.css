@@ -43,3 +43,13 @@
     margin: 0 5px 0 5px;
     color: black;
 }
+
+.custom_btn .btn_text > a {
+    font-size: 14px;
+    text-transform: none;
+    text-align: center;
+    width: 100%;
+    margin: 0 5px 0 5px;
+    color: black;
+    text-decoration: none;
+}

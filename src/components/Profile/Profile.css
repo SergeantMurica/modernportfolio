@@ -2,32 +2,23 @@
     -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     -moz-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    padding: 10px 0 10px 0;
-    background: white;
-    min-width: fit-content;
-    border-radius: 6px;
-}
-
-.profile {
-    background-color: white;
-    border-radius: 6px;
-    width: 100%;
-    display: flex;
+    margin: auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    text-align: center;
 }
 .profile_name {
     line-height: 18px;
     padding: 20px;
-}
-
-.profile_name .name {
-    text-transform: uppercase;
-    font-size: 17px;
+    color: #333;
     font-weight: bold;
+    font-size: 17px;
 }
 
-.profile_name .title {
+.profile_title {
     font-size: 13px;
-    color: gray;
+    color: #777;
 }
 
 .profile_image {
@@ -37,18 +28,16 @@
 }
 
 .profile_image img {
-    width: 100%;
-}
-
-.profile_description {
-    padding: 20px;
-    text-align: start;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 3px solid #ffbd59;
 }
 
 .profile_information {
     top: 0;
     left: 0;
-    margin: -44px 10px 30px 0;
+    margin: -75px 10px 30px 0;
 }
 
 .profile_information .timeline .timeline_item_text {
@@ -83,7 +72,31 @@
     width: 100%;
     display: flex;
     justify-content: center;
-    margin: 10px 0 0 0;
+    margin: 15px 0 0 0;
+}
+
+.socials {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    justify-content: center;
+}
+
+.social_icon {
+    color: black;
+    font-size: 1.5rem;
+    transition: color 0.3s;
+}
+
+.social_icon:hover {
+    color: #ffbd59;
+}
+
+
+@media (max-width: 1199px) {
+    .profile_container {
+        max-width: 400px;
+    }
 }
 
 

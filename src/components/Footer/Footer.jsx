@@ -1,6 +1,8 @@
 import React from 'react';
 import { Typography } from '@mui/material';
 import './Footer.css';
+import resumeData from "../../utils/resumeData.jsx";
+import CustomButton from "../Button/Button.jsx";
 
 const Footer = () => {
     return (
@@ -16,9 +18,10 @@ const Footer = () => {
                     <a href="/" target="_blank" rel="noopener noreferrer" className="footer_link">
                         Alexander Castro
                     </a>.
-                    <br />
+                    <br/>
                     Create your own portfolio from{" "}
-                    <a href="https://github.com/SergeantMurica/modernportfolio" target="_blank" rel="noopener noreferrer" className="footer_link">
+                    <a href="https://github.com/SergeantMurica/modernportfolio" target="_blank"
+                       rel="noopener noreferrer" className="footer_link">
                         My Github Page
                     </a>.
                 </Typography>
