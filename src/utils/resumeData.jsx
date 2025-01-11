@@ -57,6 +57,11 @@ export default {
                     icon: <CodeIcon />,
                     text: "Develop tailored Python-based AI tools to automate tasks, enhance business processes, and solve unique problems."
                 },
+                consulting: {
+                    title: "Game Development",
+                    icon: <CodeIcon />,
+                    text: "Use Knowledge of Unreal Engine and C++/C to develop games, or templates. Like the templates I sell on my Unreal Marketplace."
+                },
                 teach: {
                     title: "Coding Tutorials",
                     icon: <CodeIcon />,
@@ -72,14 +77,135 @@ export default {
                     icon: <CodeIcon />,
                     text: "Enhance website visibility by improving search engine rankings through keyword research, on-page optimization, and analytics-based insights."
                 },
-                consulting: {
-                    title: "Content Creation Consulting",
-                    icon: <CodeIcon />,
-                    text: "Offer advice and strategies for growing, monetizing, and optimizing content across social media platforms."
-                },
             },
         },
-        Certs: {
+        skills: {
+            title: "My Skills",
+            coding: {
+                fullStack: {
+                    title: "Full-Stack Development",
+                    certs: "Certifications: Mimo.org",
+                    time: "1 year"
+                },
+                frontEnd: {
+                    title: "Front-End Development",
+                    certs: "Certifications: Mimo.org",
+                    time: "1 year"
+                },
+                backEnd: {
+                    title: "Back-End Development",
+                    certs: "Certifications: Mimo.org",
+                    time: "1 year"
+                },
+                ai: {
+                    title: "AI Development in Python",
+                    certs: "Certifications: Mimo.org",
+                    time: "1 year"
+                },
+                javascript: {
+                    title: "JavaScript",
+                    certs: "Certifications: Mimo.org",
+                    time: "1 year"
+                },
+                typescript: {
+                    title: "Typescript",
+                    certs: "Certifications: Mimo.org",
+                    time: "1 year"
+                },
+                react: {
+                    title: "React.js",
+                    certs: "Certifications: Mimo.org",
+                    time: "1 year"
+                },
+                SQL: {
+                    title: "SQL",
+                    certs: "Certifications: Mimo.org",
+                    time: "1 year"
+                },
+                swift: {
+                    title: "Swift",
+                    certs: "Certifications: Mimo.org",
+                    time: "1 year"
+                },
+                python: {
+                    title: "Python",
+                    certs: "Certifications: Mimo.org",
+                    time: "1 year"
+                },
+                HTML: {
+                    title: "HTML",
+                    certs: "Certifications: Mimo.org",
+                    time: "4 years"
+                },
+                CSS: {
+                    title: "CSS",
+                    certs: "Certifications: Mimo.org",
+                    time: "4 years"
+                },
+            },
+
+            other: {
+                fullStack: {
+                    title: "Full-Stack Development",
+                    certs: "Certifications: Mimo.org",
+                    time: "1 year"
+                },
+                frontEnd: {
+                    title: "Front-End Development",
+                    certs: "Certifications: Mimo.org",
+                    time: "1 year"
+                },
+                backEnd: {
+                    title: "Back-End Development",
+                    certs: "Certifications: Mimo.org",
+                    time: "1 year"
+                },
+                ai: {
+                    title: "AI Development in Python",
+                    certs: "Certifications: Mimo.org",
+                    time: "1 year"
+                },
+                javascript: {
+                    title: "JavaScript",
+                    certs: "Certifications: Mimo.org",
+                    time: "1 year"
+                },
+                typescript: {
+                    title: "Typescript",
+                    certs: "Certifications: Mimo.org",
+                    time: "1 year"
+                },
+                react: {
+                    title: "React.js",
+                    certs: "Certifications: Mimo.org",
+                    time: "1 year"
+                },
+                SQL: {
+                    title: "SQL",
+                    certs: "Certifications: Mimo.org",
+                    time: "1 year"
+                },
+                swift: {
+                    title: "Swift",
+                    certs: "Certifications: Mimo.org",
+                    time: "1 year"
+                },
+                python: {
+                    title: "Python",
+                    certs: "Certifications: Mimo.org",
+                    time: "1 year"
+                },
+                HTML: {
+                    title: "HTML",
+                    certs: "Certifications: Mimo.org",
+                    time: "4 years"
+                },
+                CSS: {
+                    title: "CSS",
+                    certs: "Certifications: Mimo.org",
+                    time: "4 years"
+                },
+            },
         },
     }
 }
