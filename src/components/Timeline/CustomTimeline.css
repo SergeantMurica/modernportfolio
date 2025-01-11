@@ -1,5 +1,5 @@
 .timeline {
-    padding: 0px;
+    padding: 0;
 }
 
 .timeline .timeline_header {
@@ -11,7 +11,7 @@
 }
 
 .timeline .MuiTimeline-root {
-    min-height: 0px;
+    min-height: 0;
 }
 
 .timeline .MuiTimelineItem-missingOppositeContent:before {
@@ -40,7 +40,7 @@
 }
 
 .timeline .timeline_content {
-    padding: 0px;
+    padding: 0;
     margin-bottom: 20px;
 }
 

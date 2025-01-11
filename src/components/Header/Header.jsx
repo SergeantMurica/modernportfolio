@@ -1,27 +1,6 @@
 import React, { useState, useEffect } from 'react';
-import CustomButton from "../Button/Button.jsx";
-import {
-    Button,
-    Form,
-    FormGroup,
-    FormControl,
-    Nav,
-    Navbar,
-    NavItem,
-    NavDropdown,
-    DropdownToggle,
-    DropdownMenu,
-    DropdownItem,
-    Dropdown,
-    DropdownButton,
-    Container
-} from "react-bootstrap";
 import 'bootstrap/dist/css/bootstrap.min.css';
-import { NavLink, useLocation, BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
-import resumeData from "../../utils/resumeData.jsx";
-import websiteData from "../../utils/websiteData.jsx";
-import { Telegram } from "@mui/icons-material";
-import HomeIcon from '@mui/icons-material/Home';
+import {BrowserRouter as Router, Routes, Route} from 'react-router-dom';
 import './Header.css';
 import Homepage from "../../pages/Home/Home.jsx";
 import Portfolio from "../../pages/Portfolio/Portfolio.jsx";

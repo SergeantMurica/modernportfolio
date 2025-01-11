@@ -5,7 +5,9 @@
     align-items: center;
     background-color: white;
     border-radius: 6px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2), 0 6px 20px rgba(0, 0, 0, 0.19);
+    -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    -moz-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     margin: 0 0 30px 0;
 }
 
@@ -17,16 +19,12 @@
     align-items: center;
     justify-content: center;
     border-radius: 6px 0 0 6px;
-
 }
 
-/* Flex Container for Navigation and Socials */
-#navbar_collapse {
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    margin-right: auto;
-    gap: 20px;
+.header_home:hover {
+    -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    -moz-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 /* Navigation Links */
@@ -39,13 +37,8 @@
     justify-content: center;
 }
 
-.nav_links_dropdown {
-    margin-left: 20px;
-    margin-right: auto;
-    display: flex;
-    flex-direction: column;
-    gap: 15px; /* Space between links */
-    justify-content: center;
+.email_me {
+
 }
 
 /* Social Icons and Button Container */
@@ -54,7 +47,7 @@
     flex-direction: row;
     align-items: center;
     margin-left: auto;
-    gap: 10px;
+    gap: 5px;
 }
 
 .socials_container > a > .MuiSvgIcon-root {
@@ -77,8 +70,11 @@
 .inactive_link:hover {
     color: #272727;
     background-color: #FFFFFF;
-    border: 2px solid #004aad;
+    border: 2px solid white;
     border-radius: 5px;
+    -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    -moz-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .active_link {
@@ -88,21 +84,42 @@
     background-color: #FFFFFF;
     border: 2px solid #ffbd59;
     border-radius: 5px;
+    -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    -moz-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 /* General Dropdown Styles */
 .dropdown {
     position: relative;
-    width: 100%;
-    max-width: 300px; /* Limit width for larger screens */
-    margin: 20px auto;
+    margin-left: 20px;
+    margin-right: auto;
+    width: auto;
+    max-width: 75px;
+    max-height: 50px; /* Limit width/height for larger screens */
     font-family: Arial, sans-serif;
     border-radius: 8px;
 }
 
+/* Social Dropdown Styles */
+.dropdown_social {
+    position: relative;
+    margin-left: 20px;
+    margin-right: 5px;
+    width: auto;
+    max-width: 75px;
+    max-height: 50px; /* Limit width/height for larger screens */
+    font-family: Arial, sans-serif;
+    border-radius: 8px;
+}
+
+.dropdown_social .socials_container {
+    margin-right: auto;
+}
+
 /* Dropdown Button */
 .dropdown-button {
-    width: 100%;
+    width: auto;
     padding: 12px 16px;
     font-size: 16px;
     color: #fff;
@@ -111,12 +128,14 @@
     border-radius: 8px;
     cursor: pointer;
     text-align: left;
-    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
     transition: background-color 0.3s ease;
 }
 
 .dropdown-button:hover {
     background-color: #0056b3;
+    -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    -moz-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .dropdown-button:focus {
@@ -127,8 +146,9 @@
 .dropdown-menu {
     position: absolute;
     top: 100%;
-    left: 0;
-    width: 100%;
+    left: -7px;
+    width: auto;
+    min-width: 75px;
     background-color: #fff;
     border: 1px solid #ddd;
     border-radius: 8px;

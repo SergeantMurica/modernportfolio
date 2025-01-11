@@ -1,7 +1,7 @@
 import React, {useState} from "react";
 import {Link, NavLink, useLocation} from "react-router-dom";
-import {Nav, Navbar} from "react-bootstrap";
 import HomeIcon from "@mui/icons-material/Home";
+import MenuIcon from '@mui/icons-material/Menu';
 import websiteData from "../../utils/websiteData.jsx";
 import resumeData from "../../utils/resumeData.jsx";
 import CustomButton from "../Button/Button.jsx";
@@ -12,16 +12,19 @@ import {Telegram} from "@mui/icons-material";
 const NavigationDrop = () => {
     const location = useLocation();
     const [isOpen, setIsOpen] = useState(false);
-    const [selectedPage, setSelectedPage] = useState(null);
+    const [isSocialOpen, setIsSocialOpen] = useState(false);
 
 
     const toggleDropdown = () => {
         setIsOpen(!isOpen);
     };
 
-    const handleOptionClick = (page) => {
-        setSelectedPage(page);
+    const handleOptionClick = () => {
         setIsOpen(!isOpen);
+    };
+
+    const toggleSocialDropdown = () => {
+        setIsSocialOpen(!isSocialOpen);
     };
 
     return (
@@ -35,7 +38,7 @@ const NavigationDrop = () => {
                 </Link>
                 <div className="dropdown">
                     <button onClick={toggleDropdown} className="dropdown-button">
-                        Select an option
+                        <MenuIcon />
                     </button>
                     {isOpen && (
                         <div className="dropdown-menu">
@@ -51,14 +54,25 @@ const NavigationDrop = () => {
                         </div>
                     )}
                 </div>
+                <div className="dropdown_social">
+                    <button onClick={toggleSocialDropdown} className="dropdown-button">
+                        Socials
+                    </button>
+                    {isSocialOpen && (
+                        <div className="dropdown-menu socials_container">
+                            {/* Socials and Button */}
+                            {Object.keys(resumeData.socials).map(key => (
+                                <a key={key}
+                                   href={resumeData.socials[key].url}
+                                   target="_blank" rel="noopener noreferrer">
+                                    {resumeData.socials[key].icon}
+                                </a>
+                            ))}
 
-                {/* Socials and Button */}
-                <div className="socials_container">
-                    {Object.keys(resumeData.socials).map(key => (
-                        <a key={key} href={resumeData.socials[key].url} target="_blank" rel="noopener noreferrer">
-                            {resumeData.socials[key].icon}
-                        </a>
-                    ))}
+                        </div>
+                    )}
+                </div>
+                <div className="email_me">
                     <CustomButton text="Email Me" icon={<Telegram/>} link="mailto:castroalexander1995@outlook.com"/>
                 </div>
             </nav>

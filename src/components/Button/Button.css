@@ -8,6 +8,13 @@
     line-height: 35px !important;
     min-width: 100px !important;
     outline: none !important;
+    margin: 0 20px 0 20px !important;
+}
+
+.custom_btn:hover {
+    -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    -moz-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .custom_btn .btn_icon_container {
