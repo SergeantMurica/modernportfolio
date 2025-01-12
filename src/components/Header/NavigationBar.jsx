@@ -2,7 +2,6 @@ import React from 'react';
 import { Link, NavLink, useLocation } from 'react-router-dom';
 import HomeIcon from '@mui/icons-material/Home';
 import websiteData from '../../utils/websiteData.jsx';
-import resumeData from '../../utils/resumeData.jsx';
 import CustomButton from '../Button/Button.jsx';
 import './NavigationBar.css';
 

@@ -46,7 +46,7 @@
 .thumbnail_text {
     text-align: center;
     color: gray;
-    font-size: 10px; !important;
+    font-size: 10px;
 }
 
 @media (max-width: 1199px) {

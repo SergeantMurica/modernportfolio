@@ -30,21 +30,22 @@ const Header = () => {
     }, []);
 
     return (
-        <Router>
+        <div className="App">
             <div>
-                {isMobile ? <NavigationDrop /> : <NavigationBar />}
+                {isMobile ? <NavigationDrop/> : <NavigationBar/>}
             </div>
             <div className="header_container">
                 <Routes>
-                    <Route path="/" element={<Homepage/>}/>
-                    <Route path="/Portfolio" element={<Portfolio/>}/>
-                    <Route path="/Resume" element={<Resume/>}/>
-                    <Route path="/Blog" element={<Blog/>}/>
-                    <Route path="/Contact" element={<Contact/>}/>
+                    <Route exact path="/" element={<Homepage/>}/>
+                    <Route exact path="/Portfolio" element={<Portfolio/>}/>
+                    <Route exact path="/Resume" element={<Resume/>}/>
+                    <Route exact path="/Blog" element={<Blog/>}/>
+                    <Route exact path="/Contact" element={<Contact/>}/>
                 </Routes>
             </div>
-        </Router>
-    );
+        </div>
+    )
+        ;
 };
 
 export default Header;
