@@ -1,6 +1,6 @@
-import React, { useState, useEffect } from 'react';
+import { useState, useEffect } from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import {BrowserRouter as Router, Routes, Route} from 'react-router-dom';
+import {Routes, Route} from 'react-router-dom';
 import './Header.css';
 import Homepage from "../../pages/Home/Home.jsx";
 import Portfolio from "../../pages/Portfolio/Portfolio.jsx";

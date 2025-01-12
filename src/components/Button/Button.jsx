@@ -1,7 +1,7 @@
-import React from 'react';
 import {Button, Typography} from "@mui/material";
 import './Button.css'
 
+// eslint-disable-next-line react/prop-types
 const CustomButton = ({text, icon, link}) => {
     return (
         <div className='custom_btn'>

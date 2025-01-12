@@ -1,4 +1,3 @@
-import React from 'react'
 import Timeline from '@mui/lab/Timeline';
 import TimelineItem from '@mui/lab/TimelineItem';
 import TimelineSeparator from '@mui/lab/TimelineSeparator';
@@ -27,6 +26,7 @@ export const CustomNolineSeparator = () => {
     )
 }
 
+// eslint-disable-next-line react/prop-types
 export const CustomTimelineItem = ({title, text, link, last}) => {
 
     return (
@@ -51,6 +51,7 @@ export const CustomTimelineItem = ({title, text, link, last}) => {
     )
 }
 
+// eslint-disable-next-line react/prop-types
 const CustomTimeline = ({title, icon, children}) => {
     return (
         <div>
