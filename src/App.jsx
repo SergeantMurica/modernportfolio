@@ -8,7 +8,7 @@ import Footer from "./components/Footer/Footer.jsx";
 import './App.css'
 
 
-function App() {
+const App = () => {
 
   return (
     <Container className="main_container">
