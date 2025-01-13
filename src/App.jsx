@@ -1,7 +1,5 @@
 import React from 'react'
 import {Container, Grid2} from "@mui/material";
-import 'bootstrap/dist/css/bootstrap.min.css';
-import 'bootstrap/dist/js/bootstrap.bundle.min.js';
 import Profile from "./components/Profile/Profile.jsx";
 import Header from "./components/Header/Header.jsx";
 import Footer from "./components/Footer/Footer.jsx";
