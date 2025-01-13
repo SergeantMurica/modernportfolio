@@ -19,7 +19,7 @@ const Profile = () => {
                 </Typography>
             </div>
             <figure className="profile_image">
-                <img src={'../../src/assets/images/ProfileImg.jpg'} alt="Profile"/>
+                <img src={'../../src/assets/images/profileimage.jpg'} alt="Profile"/>
             </figure>
             <div className="profile_information">
                 <CustomTimeline icon={<PersonOutlineIcon/>}>
