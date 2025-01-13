@@ -10,33 +10,39 @@ const Homepage = () => {
                 <Grid2 container columns={2} spacing={{xs: 1.5, sm: 3, md: 4, lg: 5 }}>
                     <Grid2 item size={{ xs: 12, sm: 12, md: 12, lg: 4}}>
                         <Typography gutterBottom className="heading_text">
-                            {resumeData.resume.aboutMe.title}
+                            {resumeData.home.aboutMe.title}
                         </Typography>
                     </Grid2>
                     <Grid2 item size='grow'>
                         <Typography color="textSecondary" gutterBottom className="body_text">
-                            {resumeData.resume.aboutMe.text}
+                            {resumeData.home.aboutMe.start}
+                        </Typography>
+                        <Typography color="textSecondary" gutterBottom className="body_text">
+                            {resumeData.home.aboutMe.mid}
+                        </Typography>
+                        <Typography color="textSecondary" gutterBottom className="body_text">
+                            {resumeData.home.aboutMe.end}
                         </Typography>
                     </Grid2>
                 </Grid2>
                 <Grid2 container columns={2} spacing={{xs: 1.5, sm: 3, md: 4, lg: 5 }}>
                     <Grid2 item size={{ xs: 12, sm: 12, md: 12, lg: 4}}>
                         <Typography gutterBottom className="heading_text">
-                            {resumeData.resume.services.title}
+                            {resumeData.home.services.title}
                         </Typography>
                     </Grid2>
                     <Grid2 item size='grow'>
                             <div className="service_container">
-                                {Object.keys(resumeData.resume.services.thumbnail).map((key, index) => (
+                                {Object.keys(resumeData.home.services.thumbnail).map((key, index) => (
                                     <div key={index} className="service_thumbnails">
                                         <Typography color="textSecondary" gutterBottom className="thumbnail_icon">
-                                            {resumeData.resume.services.thumbnail[key].icon}
+                                            {resumeData.home.services.thumbnail[key].icon}
                                         </Typography>
                                         <Typography fontSize={15} className="thumbnail_title">
-                                            {resumeData.resume.services.thumbnail[key].title}
+                                            {resumeData.home.services.thumbnail[key].title}
                                         </Typography>
                                         <Typography fontSize={10} className="thumbnail_text">
-                                            {resumeData.resume.services.thumbnail[key].text}
+                                            {resumeData.home.services.thumbnail[key].text}
                                         </Typography>
                                     </div>
                                 ))}
@@ -46,45 +52,39 @@ const Homepage = () => {
                 <Grid2 container columns={2} spacing={{xs: 1.5, sm: 3, md: 4, lg: 5}}>
                     <Grid2 item size={{xs: 12, sm: 12, md: 12, lg: 4}}>
                         <Typography gutterBottom className="heading_text">
-                            {resumeData.resume.skills.title}
+                            {resumeData.home.skills.title}
                         </Typography>
                     </Grid2>
                     <Grid2 container spacing={{xs: 1.5, sm: 3, md: 4, lg: 5}}>
-                        <Grid2 item size='grow'>
+                        <Grid2 item size='auto'>
                             <Typography gutterBottom className="heading_text">
                                 Coding Skills
                             </Typography>
                             <div className="skill_container">
-                                {Object.keys(resumeData.resume.skills.coding).map((key, index) => (
-                                    <div key={index} className="certs">
+                                {Object.keys(resumeData.home.skills.coding).map((key, index) => (
+                                    <div key={index} className="skills">
                                         <Typography gutterBottom className="skill_title">
-                                            {resumeData.resume.skills.coding[key].title}
+                                            {resumeData.home.skills.coding[key].title}
                                         </Typography>
                                         <Typography color="textSecondary" className="skill_time">
-                                            {resumeData.resume.skills.coding[key].time}
-                                        </Typography>
-                                        <Typography color="textSecondary" className="skill_certs">
-                                            {resumeData.resume.skills.coding[key].certs}
+                                            {resumeData.home.skills.coding[key].time}
                                         </Typography>
                                     </div>
                                 ))}
                             </div>
                         </Grid2>
-                        <Grid2 item size='grow'>
+                        <Grid2 item size='auto'>
                             <Typography gutterBottom className="heading_text">
                                 Other Skills
                             </Typography>
-                            <div className="skill_container">
-                                {Object.keys(resumeData.resume.skills.other).map((key, index) => (
-                                    <div key={index} className="certs">
+                            <div className="skill_container other">
+                                {Object.keys(resumeData.home.skills.other).map((key, index) => (
+                                    <div key={index} className="skills">
                                         <Typography gutterBottom className="skill_title">
-                                            {resumeData.resume.skills.other[key].title}
+                                            {resumeData.home.skills.other[key].title}
                                         </Typography>
                                         <Typography color="textSecondary" className="skill_time">
-                                            {resumeData.resume.skills.other[key].time}
-                                        </Typography>
-                                        <Typography color="textSecondary" className="skill_certs">
-                                            {resumeData.resume.skills.other[key].certs}
+                                            {resumeData.home.skills.other[key].time}
                                         </Typography>
                                     </div>
                                 ))}

@@ -23,13 +23,11 @@
 
 .profile_image {
     margin-top: -10px;
-    -webkit-clip-path: polygon(0 9%, 100% 0, 100% 94%, 0% 100%);
-    clip-path: polygon(0 9%, 100% 0, 100% 94%, 0% 100%);
 }
 
 .profile_image img {
-    width: 150px;
-    height: 150px;
+    width: 200px;
+    height: 200px;
     border-radius: 50%;
     border: 3px solid #ffbd59;
 }
@@ -45,7 +43,7 @@
 }
 
 .timeline_item_text {
-    font-size: 13.5px !important;
+    font-size: 13px !important;
     color: gray;
     font-weight: 400;
 }

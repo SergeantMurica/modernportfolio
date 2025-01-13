@@ -2,9 +2,9 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin: auto;
+    margin: 0;
     background-color: #f9f9f9;
-    border-radius: 10px;
+    border-radius: 6px;
     text-align: center;
     color: black;
     position: sticky;
@@ -18,7 +18,9 @@
 .navbar_home {
     color: #ffbd59;
     text-decoration: none;
-    margin-right: 20px;
+    width: 50px;
+    height: 50px;
+    margin: 0 20px 0 0;
     display: flex;
     background: gray;
     align-items: center;
@@ -62,6 +64,13 @@
     -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     -moz-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.navbar_email {
+    color: gray;
+    text-decoration: none;
+    margin: 0;
+    text-align: center;
 }
 
 

@@ -52,6 +52,23 @@ export const CustomTimelineItem = ({title, text, link, last}) => {
 }
 
 // eslint-disable-next-line react/prop-types
+export const CustomResumeItem = ({title, company, date, text, last}) => {
+
+    return (
+        <TimelineItem>
+            {last ? <CustomNolineSeparator/> : <CustomTimelineSeparator />}
+            <TimelineContent>
+                <Typography className="work_title">{title}</Typography>
+                <Typography className="work_company">{company}</Typography>
+                <Typography variant='caption' className="work_date">{date}</Typography>
+                <Typography variant='body2' className="work_text">{text}</Typography>
+            </TimelineContent>
+        </TimelineItem>
+    )
+}
+
+
+// eslint-disable-next-line react/prop-types
 const CustomTimeline = ({title, icon, children}) => {
     return (
         <div>

@@ -1,6 +1,5 @@
 import { useState, useEffect } from 'react';
 import {Routes, Route} from 'react-router-dom';
-import './Header.css';
 import Homepage from "../../pages/Home/Home.jsx";
 import Portfolio from "../../pages/Portfolio/Portfolio.jsx";
 import Resume from "../../pages/Resume/Resume.jsx";

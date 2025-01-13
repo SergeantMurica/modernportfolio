@@ -35,14 +35,12 @@ export default {
 
     },
 
-    resume: {
+    home: {
         aboutMe: {
             title: "About me",
-            text: "I am a dedicated full-stack developer with a diverse background in military service, education, and social media marketing. My passion lies in crafting efficient and innovative web solutions that make a meaningful impact.\n" +
-                "\n" +
-                "As a mental health advocate and content creator, I’ve channeled my personal experiences to help others navigate life’s challenges, building communities focused on awareness and support. This mission has shaped my commitment to leveraging technology to empower creators and foster positivity.\n" +
-                "\n" +
-                "I aspire to advance my career as a developer by designing tools and platforms that enable content creators to connect, inspire, and bring more joy into the lives of their audiences.",
+            start: "I am a dedicated full-stack developer with a diverse background in military service, education, and social media marketing. My passion lies in crafting efficient and innovative web solutions that make a meaningful impact.",
+            mid: "As a mental health advocate and content creator, I’ve channeled my personal experiences to help others navigate life’s challenges, building communities focused on awareness and support. This mission has shaped my commitment to leveraging technology to empower creators and foster positivity.",
+            end: "I aspire to advance my career as a developer by designing tools and platforms that enable content creators to connect, inspire, and bring more joy into the lives of their audiences.",
         },
         services: {
             title: "My Services",
@@ -75,137 +73,215 @@ export default {
                 SEO: {
                     title: "SEO Optimization",
                     icon: <CodeIcon />,
-                    text: "Enhance website visibility by improving search engine rankings through keyword research, on-page optimization, and analytics-based insights."
+                    text: "Enhance website visibility by improving search engine rankings through keyword research, on-page optimization, and analytics-based insights.",
+                    last: true,
                 },
             },
         },
+
         skills: {
             title: "My Skills",
             coding: {
-                fullStack: {
-                    title: "Full-Stack Development",
-                    certs: "Certifications: Mimo.org",
-                    time: "1 year"
-                },
-                frontEnd: {
-                    title: "Front-End Development",
-                    certs: "Certifications: Mimo.org",
-                    time: "1 year"
-                },
-                backEnd: {
-                    title: "Back-End Development",
-                    certs: "Certifications: Mimo.org",
-                    time: "1 year"
-                },
-                ai: {
-                    title: "AI Development in Python",
-                    certs: "Certifications: Mimo.org",
-                    time: "1 year"
-                },
                 javascript: {
+                    icon: <CodeIcon />,
                     title: "JavaScript",
-                    certs: "Certifications: Mimo.org",
                     time: "1 year"
                 },
                 typescript: {
+                    icon: <CodeIcon />,
                     title: "Typescript",
-                    certs: "Certifications: Mimo.org",
-                    time: "1 year"
+                    time: "< 1 year"
                 },
                 react: {
+                    icon: <CodeIcon />,
                     title: "React.js",
-                    certs: "Certifications: Mimo.org",
-                    time: "1 year"
-                },
-                SQL: {
-                    title: "SQL",
-                    certs: "Certifications: Mimo.org",
                     time: "1 year"
                 },
                 swift: {
+                    icon: <CodeIcon />,
                     title: "Swift",
-                    certs: "Certifications: Mimo.org",
-                    time: "1 year"
+                    time: "< 1 year"
                 },
                 python: {
+                    icon: <CodeIcon />,
                     title: "Python",
-                    certs: "Certifications: Mimo.org",
                     time: "1 year"
                 },
+                cpp: {
+                    icon: <CodeIcon />,
+                    title: "C++",
+                    time: "2 years"
+                },
+                SQL: {
+                    icon: <CodeIcon />,
+                    title: "SQL",
+                    time: "< 1 year"
+                },
                 HTML: {
+                    icon: <CodeIcon />,
                     title: "HTML",
-                    certs: "Certifications: Mimo.org",
                     time: "4 years"
                 },
                 CSS: {
+                    icon: <CodeIcon />,
                     title: "CSS",
-                    certs: "Certifications: Mimo.org",
-                    time: "4 years"
+                    time: "4 years",
+                    last: true,
                 },
             },
 
             other: {
-                fullStack: {
-                    title: "Full-Stack Development",
-                    certs: "Certifications: Mimo.org",
-                    time: "1 year"
+                SEO: {
+                    icon: <CodeIcon />,
+                    title: "Search Engine Optimization",
+                    time: "3 years"
                 },
-                frontEnd: {
-                    title: "Front-End Development",
-                    certs: "Certifications: Mimo.org",
-                    time: "1 year"
+                SMM: {
+                    icon: <CodeIcon />,
+                    title: "Social Media Management",
+                    time: "3 years"
                 },
-                backEnd: {
-                    title: "Back-End Development",
-                    certs: "Certifications: Mimo.org",
-                    time: "1 year"
-                },
-                ai: {
-                    title: "AI Development in Python",
-                    certs: "Certifications: Mimo.org",
-                    time: "1 year"
-                },
-                javascript: {
-                    title: "JavaScript",
-                    certs: "Certifications: Mimo.org",
-                    time: "1 year"
-                },
-                typescript: {
-                    title: "Typescript",
-                    certs: "Certifications: Mimo.org",
-                    time: "1 year"
-                },
-                react: {
-                    title: "React.js",
-                    certs: "Certifications: Mimo.org",
-                    time: "1 year"
-                },
-                SQL: {
-                    title: "SQL",
-                    certs: "Certifications: Mimo.org",
-                    time: "1 year"
-                },
-                swift: {
-                    title: "Swift",
-                    certs: "Certifications: Mimo.org",
-                    time: "1 year"
-                },
-                python: {
-                    title: "Python",
-                    certs: "Certifications: Mimo.org",
-                    time: "1 year"
-                },
-                HTML: {
-                    title: "HTML",
-                    certs: "Certifications: Mimo.org",
+                edu: {
+                    icon: <CodeIcon />,
+                    title: "Education",
                     time: "4 years"
                 },
-                CSS: {
-                    title: "CSS",
-                    certs: "Certifications: Mimo.org",
-                    time: "4 years"
+                video: {
+                    icon: <CodeIcon />,
+                    title: "Video Editing",
+                    time: "4 years",
+                    last: true,
                 },
             },
         },
+    },
+
+    resume: {
+        worktitle: "Working History",
+        edutitle: "Education History",
+        certtitle: "My Certifications",
+
+        work: {
+            free: {
+                title: "Freelancer",
+                company: "Self-Employed",
+                date: "08/2022 - Current",
+                description: "",
+            },
+            content: {
+                title: "Content Creator",
+                company: "Self-Employed",
+                date: "04/2021 - 12/2024",
+                description: "Produce content focused on mental health awareness and suicide prevention through gaming and entertainment.",
+                twitch: "1.5k followers",
+                tiktok: "21k followers",
+                youtube: "8k followers",
+            },
+            sales: {
+                title: "Sales Professional",
+                company: "Bell Honda",
+                date: "10/2023 - 11/2023",
+                description: "Engaged with clients to identify needs and deliver desired vehicle.",
+            },
+            DoD: {
+                title: "Director of Development",
+                company: "Veterans Gaming & Mental Health Mission",
+                date: "01/2023 - 05/2023",
+                description: "Led development initiatives to secure funding and build partnerships for the organization. While also designing and implemented strategic plans to enhance organizational growth.",
+            },
+            DoM: {
+                title: "Volunteer Director of Marketing",
+                company: "Veterans Gaming & Mental Health Mission",
+                date: "05/2022 - 01/2023",
+                description: "Managed SEO strategies, advertising campaigns, and the social media presence of the organization. Also redesigned the organization's website to improve functionality and engagement.",
+            },
+            wj: {
+                title: "Social Media Coordinator",
+                company: "Liftable Media",
+                date: "03/2022 - 8/2022",
+                description: "Planned, created, and scheduled content for Western Journal News. Helped establish a successful workflow for producing and distributing news shorts on TikTok, YouTube, and Instagram Reels.",
+            },
+            teach: {
+                title: "Substitute Teacher",
+                company: "DVUSD",
+                date: "09/2020 - 05/2021",
+                description: "Delivered flexible teaching solutions, adapting to various educational levels and classroom needs.",
+            },
+            dub: {
+                title: "Volunteer Moderator/Event Manager",
+                company: "JoshDub’s Discord Server",
+                date: "11/2019 - 05/2022",
+                description: "Assisted in managing a 90,000-member online community, while organizing events.",
+            },
+            army: {
+                title: "Combat Medic/Healthcare Specialist",
+                company: "U.S. Army",
+                date: "06/2013 - 06/2018",
+                description: "Delivered emergency medical treatment and primary care for soldiers in both normal, and critical situations.",
+                last: true,
+            },
+        },
+
+        education: {
+            pol: {
+                major: "Bachelor of Science in Political Science",
+                minor: "with concentrations in International Relations, Public Administration, and a minor in History",
+                date: "09/2018 - 05/2020",
+                last: true,
+            },
+        },
+
+        certs: {
+            fullStack: {
+                title: "Full-Stack Development",
+                img: "/assets/images/certs/FullStackCert.pdf",
+            },
+            frontEnd: {
+                title: "Front-End Development",
+                img: "/assets/images/certs/FrontEndCert.pdf",
+            },
+            backEnd: {
+                title: "Back-End Development",
+                img: "/assets/images/certs/BackEndCert.pdf",
+            },
+            ai: {
+                title: "AI Development in Python",
+                img: "/assets/images/certs/PythonAICert.pdf",
+            },
+            javascript: {
+                title: "JavaScript",
+                img: "/assets/images/certs/JavaScriptCert.pdf",
+            },
+            typescript: {
+                title: "Typescript",
+                img: "/assets/images/certs/TypescriptCert.pdf",
+            },
+            react: {
+                title: "React.js",
+                img: "/assets/images/certs/ReactCert.pdf",
+            },
+            SQL: {
+                title: "SQL",
+                img: "/assets/images/certs/SQLCert.pdf",
+            },
+            swift: {
+                title: "Swift",
+                img: "/assets/images/certs/SwiftCert.pdf",
+            },
+            python: {
+                title: "Python",
+                img: "/assets/images/certs/PythonCert.pdf",
+            },
+            HTML: {
+                title: "HTML",
+                img: "/assets/images/certs/HTMLCert.pdf",
+            },
+            CSS: {
+                title: "CSS",
+                img: "/assets/images/certs/CSSCert.pdf",
+                last: true,
+            },
+
+        }
     }
 }
