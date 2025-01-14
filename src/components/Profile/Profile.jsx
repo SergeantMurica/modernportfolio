@@ -3,7 +3,7 @@ import { Typography } from '@mui/material';
 import PersonOutlineIcon from '@mui/icons-material/PersonOutline';
 import DownloadIcon from '@mui/icons-material/Download';
 import CustomButton from '../Button/Button.jsx';
-import CustomTimeline, { CustomTimelineItem } from '../Timeline/CustomTimeline.jsx';
+import BasicTimeline, { CustomTimelineItem } from '../Timeline/BasicTimeline.jsx';
 import resumeData from '../../utils/resumeData.jsx';
 import './Profile.css';
 
@@ -22,11 +22,11 @@ const Profile = () => {
                 <img src={'/assets/images/profileImage.png'} alt="Profile Image"/>
             </figure>
             <div className="profile_information">
-                <CustomTimeline icon={<PersonOutlineIcon/>}>
+                <BasicTimeline icon={<PersonOutlineIcon/>}>
                     <CustomTimelineItem title="Current Job" text={resumeData.jobTitle}/>
                     <CustomTimelineItem title="Birthday" text={resumeData.birthday}/>
                     <CustomTimelineItem title="Email" text={resumeData.email} last={true}/>
-                </CustomTimeline>
+                </BasicTimeline>
                 <div className="resume_btn">
                     <CustomButton text="Download CV" icon={<DownloadIcon/>}/>
                 </div>

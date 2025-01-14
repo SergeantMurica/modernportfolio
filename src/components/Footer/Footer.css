@@ -52,8 +52,3 @@
 }
 
 
-@media (max-width: 1199px) {
-    .navbar {
-        max-width: 600px;
-    }
-}

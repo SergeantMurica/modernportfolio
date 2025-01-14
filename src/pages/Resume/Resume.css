@@ -16,29 +16,23 @@
 
 }
 
-.cert_container {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    align-items: center;
-    wrap-option: wrap;
-}
-
-.cert_thumbnails {
-    background-color: white;
-    border-radius: 6px;
-    -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    -moz-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    margin: 10px;
-    padding: 20px;
-    width: 180px;
-    height: 180px;
-}
-
-.cert_title {
+.resume_title {
 
 }
 
-.cert_img {
+.resume_company {
 
+}
+
+.resume_date {
+
+}
+
+.resume_text {
+
+}
+
+.resume_image {
+    max-width: 100%;
+    max-height: 50px;
 }

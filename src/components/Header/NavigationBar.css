@@ -8,6 +8,7 @@
     text-align: center;
     color: black;
     position: sticky;
+    width: 100%;
     top: 0;
     z-index: 1000;
     -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
@@ -42,7 +43,7 @@
 .navbar_links {
     display: flex;
     gap: 15px;
-    margin-right: auto;
+    margin: 0 auto 0 20px ;
 }
 
 .nav_item {
@@ -74,8 +75,3 @@
 }
 
 
-@media (max-width: 1199px) {
-    .navbar {
-        max-width: 600px;
-    }
-}

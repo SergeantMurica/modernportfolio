@@ -38,9 +38,17 @@ export default {
     home: {
         aboutMe: {
             title: "About me",
-            start: "I am a dedicated full-stack developer with a diverse background in military service, education, and social media marketing. My passion lies in crafting efficient and innovative web solutions that make a meaningful impact.",
-            mid: "As a mental health advocate and content creator, I’ve channeled my personal experiences to help others navigate life’s challenges, building communities focused on awareness and support. This mission has shaped my commitment to leveraging technology to empower creators and foster positivity.",
-            end: "I aspire to advance my career as a developer by designing tools and platforms that enable content creators to connect, inspire, and bring more joy into the lives of their audiences.",
+            start:
+                "I am a dedicated full-stack developer with a diverse background in military service, education, " +
+                "and social media marketing. My passion lies in crafting efficient and innovative web solutions " +
+                "that make a meaningful impact.",
+            mid:
+                "As a mental health advocate and content creator, I’ve channeled my personal experiences to help " +
+                "others navigate life’s challenges, building communities focused on awareness and support. " +
+                "This mission has shaped my commitment to leveraging technology to empower creators and foster positivity.",
+            end:
+                "I aspire to advance my career as a developer by designing tools and platforms that enable content " +
+                "creators to connect, inspire, and bring more joy into the lives of their audiences.",
         },
         services: {
             title: "My Services",
@@ -48,32 +56,44 @@ export default {
                 web: {
                     title: "Web Development",
                     icon: <CodeIcon />,
-                    text: "Build comprehensive web solutions by combining front-end user interfaces with back-end logic and database integration for a seamless experience."
+                    text:
+                        "Build comprehensive web solutions by combining front-end user interfaces with back-end logic " +
+                        "and database integration for a seamless experience."
                 },
                 ai: {
                     title: "Custom AI",
                     icon: <CodeIcon />,
-                    text: "Develop tailored Python-based AI tools to automate tasks, enhance business processes, and solve unique problems."
+                    text:
+                        "Develop tailored Python-based AI tools to automate tasks, enhance business processes, " +
+                        "and solve unique problems."
                 },
                 consulting: {
                     title: "Game Development",
                     icon: <CodeIcon />,
-                    text: "Use Knowledge of Unreal Engine and C++/C to develop games, or templates. Like the templates I sell on my Unreal Marketplace."
+                    text:
+                        "Use Knowledge of Unreal Engine and C++/C to develop games, or templates. " +
+                        "Like the templates I sell on my Unreal Marketplace."
                 },
                 teach: {
                     title: "Coding Tutorials",
                     icon: <CodeIcon />,
-                    text: "Provide beginner-to-intermediate programming lessons in Python, JavaScript, SQL, and web development to help others learn and grow their technical skills."
+                    text:
+                        "Provide beginner-to-intermediate programming lessons in Python, JavaScript, SQL, " +
+                        "and web development to help others learn and grow their technical skills."
                 },
                 SMM: {
                     title: "Social Media Management",
                     icon: <CodeIcon />,
-                    text: "Plan and execute strategies to grow audiences, increase engagement, and amplify brand presence across social media platforms."
+                    text:
+                        "Plan and execute strategies to grow audiences, increase engagement, " +
+                        "and amplify brand presence across social media platforms."
                 },
                 SEO: {
                     title: "SEO Optimization",
                     icon: <CodeIcon />,
-                    text: "Enhance website visibility by improving search engine rankings through keyword research, on-page optimization, and analytics-based insights.",
+                    text:
+                        "Enhance website visibility by improving search engine rankings through keyword research, " +
+                        "on-page optimization, and analytics-based insights.",
                     last: true,
                 },
             },
@@ -225,63 +245,84 @@ export default {
         education: {
             pol: {
                 major: "Bachelor of Science in Political Science",
-                minor: "with concentrations in International Relations, Public Administration, and a minor in History",
+                minor:
+                    "Completed with concentrations in International Relations, Public Administration, and a minor in History. " +
+                    "While also completing Leadership Fellows and NSLS curriculum and requirements",
+                school: "Methodist University",
                 date: "09/2018 - 05/2020",
                 last: true,
             },
         },
 
-        certs: {
+        mainCerts: {
+
             fullStack: {
                 title: "Full-Stack Development",
-                img: "/assets/images/certs/FullStackCert.pdf",
+                company: "Mimo.org",
+                img: "/assets/images/certs/FullStackCert.jpg",
             },
             frontEnd: {
                 title: "Front-End Development",
-                img: "/assets/images/certs/FrontEndCert.pdf",
+                company: "Mimo.org",
+                img: "/assets/images/certs/FrontEndCert.jpg",
             },
             backEnd: {
                 title: "Back-End Development",
-                img: "/assets/images/certs/BackEndCert.pdf",
+                company: "Mimo.org",
+                img: "/assets/images/certs/BackEndCert.jpg",
             },
             ai: {
                 title: "AI Development in Python",
-                img: "/assets/images/certs/PythonAICert.pdf",
-            },
-            javascript: {
-                title: "JavaScript",
-                img: "/assets/images/certs/JavaScriptCert.pdf",
-            },
-            typescript: {
-                title: "Typescript",
-                img: "/assets/images/certs/TypescriptCert.pdf",
-            },
-            react: {
-                title: "React.js",
-                img: "/assets/images/certs/ReactCert.pdf",
-            },
-            SQL: {
-                title: "SQL",
-                img: "/assets/images/certs/SQLCert.pdf",
-            },
-            swift: {
-                title: "Swift",
-                img: "/assets/images/certs/SwiftCert.pdf",
-            },
-            python: {
-                title: "Python",
-                img: "/assets/images/certs/PythonCert.pdf",
-            },
-            HTML: {
-                title: "HTML",
-                img: "/assets/images/certs/HTMLCert.pdf",
-            },
-            CSS: {
-                title: "CSS",
-                img: "/assets/images/certs/CSSCert.pdf",
+                company: "Mimo.org",
+                img: "/assets/images/certs/PythonAICert.jpg",
                 last: true,
             },
 
+        },
+
+        otherCerts: {
+
+            javascript: {
+                title: "JavaScript",
+                company: "Mimo.org",
+                img: "/assets/images/certs/JavaScriptCert.jpg",
+            },
+            typescript: {
+                title: "Typescript",
+                company: "Mimo.org",
+                img: "/assets/images/certs/TypescriptCert.jpg",
+            },
+            react: {
+                title: "React.js",
+                company: "Mimo.org",
+                img: "/assets/images/certs/ReactCert.jpg",
+            },
+            SQL: {
+                title: "SQL",
+                company: "Mimo.org",
+                img: "/assets/images/certs/SQLCert.jpg",
+            },
+            swift: {
+                title: "Swift",
+                company: "Mimo.org",
+                img: "/assets/images/certs/SwiftCert.jpg",
+            },
+            python: {
+                title: "Python",
+                company: "Mimo.org",
+                img: "/assets/images/certs/PythonCert.jpg",
+            },
+            HTML: {
+                title: "HTML",
+                company: "Mimo.org",
+                img: "/assets/images/certs/HTMLCert.jpg",
+            },
+            CSS: {
+                title: "CSS",
+                company: "Mimo.org",
+                img: "/assets/images/certs/CSSCert.jpg",
+                last: true,
+            },
         }
     }
 }

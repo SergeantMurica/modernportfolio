@@ -1,9 +1,12 @@
-import Timeline from '@mui/lab/Timeline';
-import TimelineItem from '@mui/lab/TimelineItem';
-import TimelineSeparator from '@mui/lab/TimelineSeparator';
-import TimelineConnector from '@mui/lab/TimelineConnector';
-import TimelineContent from '@mui/lab/TimelineContent';
-import TimelineDot from '@mui/lab/TimelineDot';
+import React, { useState } from "react";
+import {
+    TimelineItem,
+    TimelineContent,
+    Timeline,
+    TimelineSeparator,
+    TimelineConnector,
+    TimelineDot
+} from "@mui/lab";
 import {Typography} from "@mui/material";
 import "./CustomTimeline.css"
 
@@ -52,24 +55,7 @@ export const CustomTimelineItem = ({title, text, link, last}) => {
 }
 
 // eslint-disable-next-line react/prop-types
-export const CustomResumeItem = ({title, company, date, text, last}) => {
-
-    return (
-        <TimelineItem>
-            {last ? <CustomNolineSeparator/> : <CustomTimelineSeparator />}
-            <TimelineContent>
-                <Typography className="work_title">{title}</Typography>
-                <Typography className="work_company">{company}</Typography>
-                <Typography variant='caption' className="work_date">{date}</Typography>
-                <Typography variant='body2' className="work_text">{text}</Typography>
-            </TimelineContent>
-        </TimelineItem>
-    )
-}
-
-
-// eslint-disable-next-line react/prop-types
-const CustomTimeline = ({title, icon, children}) => {
+const BasicTimeline = ({title, icon, children}) => {
     return (
         <div>
             <Timeline className={'timeline'}>
@@ -92,4 +78,4 @@ const CustomTimeline = ({title, icon, children}) => {
 }
 
 
-export default CustomTimeline;
+export default BasicTimeline;

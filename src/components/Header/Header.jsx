@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react';
+import React, { useState, useEffect } from 'react';
 import {Routes, Route} from 'react-router-dom';
 import Homepage from "../../pages/Home/Home.jsx";
 import Portfolio from "../../pages/Portfolio/Portfolio.jsx";
@@ -7,6 +7,7 @@ import Blog from "../../pages/Blog/Blog.jsx";
 import Contact from "../../pages/Contact/Contact.jsx";
 import NavigationBar from "./NavigationBar.jsx";
 import NavigationDrop from "./NavigationDrop.jsx";
+import {Container, Grid2} from "@mui/material";
 
 
 
@@ -29,10 +30,10 @@ const Header = () => {
 
     return (
         <div className="App">
-            <div>
-                {isMobile ? <NavigationDrop/> : <NavigationBar/>}
+            <div className="header">
+                    {isMobile ? <NavigationDrop/> : <NavigationBar/>}
             </div>
-            <div className="header_container">
+            <div>
                 <Routes>
                     <Route exact path="/" element={<Homepage/>}/>
                     <Route exact path="/Portfolio" element={<Portfolio/>}/>
