@@ -7,3 +7,39 @@
     margin: 30px;
     padding: 30px;
 }
+
+.contact-information {
+    margin: 2px 0 12px 0;
+    font-size: 13px;
+    color: darkslategrey;
+    font-weight: 500;
+}
+
+.contact-information span {
+     margin: 2px 0 12px 0;
+     font-size: 13px;
+     color: black;
+     font-weight: 600;
+ }
+
+.contact-socials {display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(25px, 1fr));
+    gap: 10px;
+}
+
+
+
+/* Submit Button */
+
+.contact-container .custom-btn {
+    padding: 1px 12px;
+    margin: 0;
+}
+
+.contact-container .custom-btn .btn-text {
+    font-size: 14px;
+}
+
+.contact-container .custom-btn .btn-text > a {
+    font-size: 14px;
+}

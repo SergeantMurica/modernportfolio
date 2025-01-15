@@ -18,7 +18,7 @@
     margin: 10px 0 25px 0;
 }
 
-.heading-text span {
+.heading-text > span {
     position: absolute;
     height: 3px;
     left: 0;

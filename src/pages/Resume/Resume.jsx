@@ -28,7 +28,7 @@ const Resume = () => {
                                 <div >
                                     <BasicTimeline title={resumeData.resume.worktitle} icon={<WorkIcon/>}>
                                         {Object.keys(resumeData.resume.work).map((key, index) => (
-                                            <div key={index} className="work-item">
+                                            <div key={index} className="resume-item">
                                                 <ResumeTimeline
                                                     title={resumeData.resume.work[key].title}
                                                     company={resumeData.resume.work[key].company}
@@ -45,7 +45,7 @@ const Resume = () => {
                                 <div >
                                     <BasicTimeline title={resumeData.resume.edutitle} icon={<SchoolIcon/>}>
                                         {Object.keys(resumeData.resume.education).map((key, index) => (
-                                            <div key={index} className="work-item">
+                                            <div key={index} className="resume-item">
                                                 <ResumeTimeline
                                                     title={resumeData.resume.education[key].major}
                                                     company={resumeData.resume.education[key].school}
@@ -60,7 +60,7 @@ const Resume = () => {
                                 <div >
                                     <BasicTimeline title={resumeData.resume.certtitle} icon={<LightbulbIcon/>}>
                                         {Object.keys(resumeData.resume.certs).map((key, index) => (
-                                            <div key={index} className="work-item">
+                                            <div key={index} className="resume-item">
                                                 <ResumeTimeline
                                                     title={resumeData.resume.certs[key].title}
                                                     company={resumeData.resume.certs[key].company}

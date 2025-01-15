@@ -2,6 +2,7 @@ import { Link, NavLink, useLocation } from 'react-router-dom';
 import HomeIcon from '@mui/icons-material/Home';
 import websiteData from '../../utils/websiteData.jsx';
 import CustomButton from '../Button/Button.jsx';
+import EmailIcon from '@mui/icons-material/Email';
 import './NavigationBar.css';
 
 const NavigationBar = () => {
@@ -24,7 +25,7 @@ const NavigationBar = () => {
                 ))}
             </div>
             <div className="navbar-email">
-                <CustomButton text="Email Me" link="mailto:castroalexander1995@outlook.com" />
+                <CustomButton text="Email Me" icon={<EmailIcon/>} link="mailto:castroalexander1995@outlook.com" />
             </div>
         </nav>
     );
