@@ -7,47 +7,46 @@ import {
     TimelineConnector,
     TimelineDot
 } from "@mui/lab";
-import {Typography} from "@mui/material";
-import "./CustomTimeline.css"
+import "./BasicTimeline.css"
 
 
-export const CustomTimelineSeparator = () => {
+export const BasicTimelineSeparator = () => {
 
     return (
-        <TimelineSeparator className={'timeline_separator'}>
-            <TimelineDot className={'timeline_dot'}></TimelineDot>
+        <TimelineSeparator className={'timeline-separator'}>
+            <TimelineDot className={'timeline-dot'}></TimelineDot>
             <TimelineConnector/>
         </TimelineSeparator>
     )
 }
-export const CustomNolineSeparator = () => {
+export const BasicNolineSeparator = () => {
 
     return (
-        <TimelineSeparator className={'timeline_separator'}>
-            <TimelineDot className={'timeline_dot'}></TimelineDot>
+        <TimelineSeparator className={'timeline-separator'}>
+            <TimelineDot className={'timeline-dot'}></TimelineDot>
         </TimelineSeparator>
     )
 }
 
 // eslint-disable-next-line react/prop-types
-export const CustomTimelineItem = ({title, text, link, last}) => {
+export const BasicTimelineItem = ({title, text, link, last}) => {
 
     return (
         <TimelineItem>
-            {last ? <CustomNolineSeparator/> : <CustomTimelineSeparator />}
-            <TimelineContent className="timeline_content">
+            {last ? <BasicNolineSeparator/> : <BasicTimelineSeparator />}
+            <TimelineContent className="timeline-content">
                 {link ? (
-                    <Typography className="timeline_item_text">
+                    <div className="timeline-item-text">
                       <span>
                           {title}:
                       </span>
-                        <a href={link} target="_blank">
+                        <a href={link} target="-blank">
                             {text}
                         </a>
-                    </Typography>) : (
-                    <Typography className="timeline_item_text">
+                    </div>) : (
+                    <div className="timeline-item-text">
                         <span>{title}:</span> {text}
-                    </Typography>
+                    </div>
                 )}
             </TimelineContent>
         </TimelineItem>
@@ -58,17 +57,17 @@ export const CustomTimelineItem = ({title, text, link, last}) => {
 const BasicTimeline = ({title, icon, children}) => {
     return (
         <div>
-            <Timeline className={'timeline'}>
+            <Timeline className='timeline'>
                 {/* Item Header */}
-                <TimelineItem className={'timeline_first'}>
+                <TimelineItem className='timeline-first'>
                     <TimelineSeparator>
-                        <TimelineDot className={'timeline_dot_header'}>{icon}</TimelineDot>
+                        <TimelineDot className='timeline-dot-header'>{icon}</TimelineDot>
                         <TimelineConnector/>
                     </TimelineSeparator>
                     <TimelineContent>
-                        <Typography variant='h6' className={'timeline_header'}>
+                        <div className='timeline-header'>
                             {title}
-                        </Typography>
+                        </div>
                     </TimelineContent>
                 </TimelineItem>
                 {children}

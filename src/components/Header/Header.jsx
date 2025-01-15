@@ -7,7 +7,6 @@ import Blog from "../../pages/Blog/Blog.jsx";
 import Contact from "../../pages/Contact/Contact.jsx";
 import NavigationBar from "./NavigationBar.jsx";
 import NavigationDrop from "./NavigationDrop.jsx";
-import {Container, Grid2} from "@mui/material";
 
 
 

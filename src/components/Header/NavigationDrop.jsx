@@ -14,20 +14,20 @@ const NavigationDrop = () => {
     const closeDropdown = () => setIsOpen(false);
 
     return (
-        <nav className="dropdown_navbar">
-            <Link to="/" className={`dropdown_home ${location.pathname === "/" ? 'active' : ''}`} onClick={closeDropdown}>
+        <nav className="dropdown-navbar">
+            <Link to="/" className={`dropdown-home ${location.pathname === "/" ? 'active' : ''}`} onClick={closeDropdown}>
                 <HomeIcon fontSize="large" />
             </Link>
-            <button onClick={toggleDropdown} className="menu_button">
+            <button onClick={toggleDropdown} className="menu-button">
                 <MenuIcon fontSize="large" />
             </button>
             {isOpen && (
-                <div className="dropdown_menu">
+                <div className="dropdown-menu">
                     {Object.keys(websiteData.pages).map((key, index) => (
                         <NavLink
                             key={index}
                             to={websiteData.pages[key].path}
-                            className={`dropdown_item ${location.pathname === websiteData.pages[key].path ? 'active' : ''}`}
+                            className={`dropdown-item ${location.pathname === websiteData.pages[key].path ? 'active' : ''}`}
                             onClick={() => toggleDropdown()}
                         >
                             {websiteData.pages[key].name}

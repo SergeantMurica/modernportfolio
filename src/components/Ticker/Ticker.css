@@ -1,0 +1,74 @@
+.ticker-container {
+    overflow: hidden;
+    white-space: nowrap;
+    background-color: white;
+    margin: 20px -24px 20px -24px;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.ticker1 {
+    display: inline-flex;
+    animation: scroll-left 30s linear infinite;
+}
+
+.ticker1:hover {
+    animation-play-state: paused;
+}
+
+.ticker2 {
+     display: inline-flex;
+     animation: scroll-right 30s linear infinite;
+ }
+
+.ticker2:hover {
+    animation-play-state: paused;
+}
+
+.ticker-item {
+    display: flex;
+    align-items: center;
+    margin: 0 20px;
+}
+
+.icon {
+    width: 24px;
+    height: 24px;
+    margin-right: 20px;
+    margin-left: 20px;
+}
+
+/* Ticker moving left */
+@keyframes scroll-left {
+    0% {
+        transform: translateX(0); /* Start at the container's left edge */
+    }
+    50% {
+        transform: translateX(-60%); /* Move out of the container on the left */
+    }
+    100% {
+        transform: translateX(0); /* Move out of the container on the left */
+    }
+}
+
+/* Ticker moving right */
+@keyframes scroll-right {
+    0% {
+        transform: translateX(-60%); /* Start at the container's right edge */
+    }
+    50% {
+        transform: translateX(0); /* Move out of the container on the right */
+    }
+    100% {
+        transform: translateX(-60%); /* Move out of the container on the right */
+    }
+}
+
+@media (max-width: 600px) {
+    .ticker-container {
+        margin: 20px -15px 20px -15px;
+    }
+
+}
+

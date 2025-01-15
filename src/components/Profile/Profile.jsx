@@ -1,33 +1,32 @@
 import React from 'react';
-import { Typography } from '@mui/material';
 import PersonOutlineIcon from '@mui/icons-material/PersonOutline';
 import DownloadIcon from '@mui/icons-material/Download';
 import CustomButton from '../Button/Button.jsx';
-import BasicTimeline, { CustomTimelineItem } from '../Timeline/BasicTimeline.jsx';
+import BasicTimeline, { BasicTimelineItem } from '../Timeline/BasicTimeline.jsx';
 import resumeData from '../../utils/resumeData.jsx';
 import './Profile.css';
 
 const Profile = () => {
     return (
-        <div className="profile_container">
-            <div className="profile_header">
-                <Typography variant="h4" className="profile_name">
+        <div className="profile-container">
+            <div className="profile-header">
+                <div className="profile-name">
                     {resumeData.name}
-                </Typography>
-                <Typography variant="subtitle1" className="profile_title">
+                </div>
+                <div className="profile-title">
                     {resumeData.title}
-                </Typography>
+                </div>
             </div>
-            <figure className="profile_image">
+            <figure className="profile-image">
                 <img src={'/assets/images/profileImage.png'} alt="Profile Image"/>
             </figure>
-            <div className="profile_information">
+            <div className="profile-information">
                 <BasicTimeline icon={<PersonOutlineIcon/>}>
-                    <CustomTimelineItem title="Current Job" text={resumeData.jobTitle}/>
-                    <CustomTimelineItem title="Birthday" text={resumeData.birthday}/>
-                    <CustomTimelineItem title="Email" text={resumeData.email} last={true}/>
+                    <BasicTimelineItem title="Current Job" text={resumeData.jobTitle}/>
+                    <BasicTimelineItem title="Birthday" text={resumeData.birthday}/>
+                    <BasicTimelineItem title="Email" text={resumeData.email} last={true}/>
                 </BasicTimeline>
-                <div className="resume_btn">
+                <div className="resume-btn">
                     <CustomButton text="Download CV" icon={<DownloadIcon/>}/>
                 </div>
             </div>
@@ -37,10 +36,10 @@ const Profile = () => {
                     <a
                         key={key}
                         href={resumeData.socials[key].url}
-                        target="_blank"
+                        target="-blank"
                         rel="noopener noreferrer"
                         title={key}
-                        className="social_icon"
+                        className="social-icon"
                     >
                         {resumeData.socials[key].icon}
                     </a>

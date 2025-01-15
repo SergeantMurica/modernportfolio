@@ -9,7 +9,7 @@ import './App.css'
 const App = () => {
 
   return (
-    <Container className="main_container">
+    <Container className="main-container">
       <Grid2 container spacing={{xs: 1.5, sm: 1.5, md: 1.5, lg: 5 }}>
         <Grid2 item size={{ xs: 12, sm: 12, md: 12, lg: 4}}>
           <Profile/>

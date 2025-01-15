@@ -1,30 +1,27 @@
 import React from 'react';
-import { Typography } from '@mui/material';
 import './Footer.css';
-import resumeData from "../../utils/resumeData.jsx";
-import CustomButton from "../Button/Button.jsx";
 
 const Footer = () => {
     return (
         <footer className="footer">
-            <div className="footer_left">
-                <Typography variant="body2" className="footer_text">
+            <div className="footer-left">
+                <div variant="body2" className="footer-text">
                     &copy; {new Date().getFullYear()} Alexander Castro
-                </Typography>
+                </div>
             </div>
-            <div className="footer_right">
-                <Typography variant="body2" className="footer_text">
+            <div className="footer-right">
+                <div variant="body2" className="footer-text">
                     Designed, Developed, and Maintained by{" "}
-                    <a href="/" target="_blank" rel="noopener noreferrer" className="footer_link">
+                    <a href="/" target="-blank" rel="noopener noreferrer" className="footer-link">
                         Alexander Castro
                     </a>.
                     <br/>
                     Create your own portfolio from{" "}
-                    <a href="https://github.com/SergeantMurica/modernportfolio" target="_blank"
-                       rel="noopener noreferrer" className="footer_link">
+                    <a href="https://github.com/SergeantMurica/modernportfolio" target="-blank"
+                       rel="noopener noreferrer" className="footer-link">
                         My Github Page
                     </a>.
-                </Typography>
+                </div>
             </div>
         </footer>
     );

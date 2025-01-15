@@ -1,23 +1,23 @@
-import {Button, Typography} from "@mui/material";
+import {Button} from "@mui/material";
 import './Button.css'
 
 // eslint-disable-next-line react/prop-types
 const CustomButton = ({text, icon, link}) => {
     return (
-        <div className='custom_btn'>
+        <div className='custom-btn'>
             <Button endIcon={icon ?
-                <div className='btn_icon_container'>
+                <div className='btn-icon-container'>
                     {icon}
                 </div> : null}>
                 {link ? (
-                    <Typography className="btn_text">
-                        <a href={link} target="_blank">
+                    <div className="btn-text">
+                        <a href={link} target="-blank">
                             {text}
                         </a>
-                    </Typography>) : (
-                    <Typography className="btn_text">
+                    </div>) : (
+                    <div className="btn-text">
                         {text}
-                    </Typography>
+                    </div>
                 )}
             </Button>
         </div>

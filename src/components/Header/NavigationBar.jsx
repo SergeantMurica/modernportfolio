@@ -9,21 +9,21 @@ const NavigationBar = () => {
 
     return (
         <nav className="navbar">
-            <Link to="/" className={`navbar_home ${location.pathname === "/" ? 'active' : ''}`}>
+            <Link to="/" className={`navbar-home ${location.pathname === "/" ? 'active' : ''}`}>
                 <HomeIcon fontSize="large" />
             </Link>
-            <div className="navbar_links">
+            <div className="navbar-links">
                 {Object.keys(websiteData.pages).map((key, index) => (
                     <NavLink
                         key={index}
                         to={websiteData.pages[key].path}
-                        className={`nav_item ${location.pathname === websiteData.pages[key].path ? 'active' : ''}`}
+                        className={`nav-item ${location.pathname === websiteData.pages[key].path ? 'active' : ''}`}
                     >
                         {websiteData.pages[key].name}
                     </NavLink>
                 ))}
             </div>
-            <div className="navbar_email">
+            <div className="navbar-email">
                 <CustomButton text="Email Me" link="mailto:castroalexander1995@outlook.com" />
             </div>
         </nav>

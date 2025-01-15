@@ -3,6 +3,25 @@ import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import CodeIcon from '@mui/icons-material/Code';
 import GitHubIcon from '@mui/icons-material/GitHub';
 import YouTubeIcon from '@mui/icons-material/YouTube';
+import FacebookIcon from '@mui/icons-material/Facebook';
+import XIcon from '@mui/icons-material/X';
+import InstagramIcon from '@mui/icons-material/Instagram';
+import SportsEsportsIcon from '@mui/icons-material/SportsEsports';
+import SourceIcon from '@mui/icons-material/Source';
+import PublicIcon from '@mui/icons-material/Public';
+import StorageIcon from '@mui/icons-material/Storage';
+import DnsIcon from '@mui/icons-material/Dns';
+import WebIcon from '@mui/icons-material/Web';
+import SmartToyIcon from "@mui/icons-material/SmartToy";
+import TagIcon from "@mui/icons-material/Tag";
+import SmartphoneIcon from '@mui/icons-material/Smartphone';
+import MemoryIcon from '@mui/icons-material/Memory';
+import WebAssetIcon from '@mui/icons-material/WebAsset';
+import GamepadIcon from '@mui/icons-material/Gamepad';
+
+
+
+
 
 export default {
     name: "Alexander Castro",
@@ -55,21 +74,21 @@ export default {
             thumbnail: {
                 web: {
                     title: "Web Development",
-                    icon: <CodeIcon />,
+                    icon: <WebIcon />,
                     text:
                         "Build comprehensive web solutions by combining front-end user interfaces with back-end logic " +
                         "and database integration for a seamless experience."
                 },
                 ai: {
                     title: "Custom AI",
-                    icon: <CodeIcon />,
+                    icon: <SmartToyIcon />,
                     text:
                         "Develop tailored Python-based AI tools to automate tasks, enhance business processes, " +
                         "and solve unique problems."
                 },
                 consulting: {
                     title: "Game Development",
-                    icon: <CodeIcon />,
+                    icon: <SportsEsportsIcon />,
                     text:
                         "Use Knowledge of Unreal Engine and C++/C to develop games, or templates. " +
                         "Like the templates I sell on my Unreal Marketplace."
@@ -82,15 +101,15 @@ export default {
                         "and web development to help others learn and grow their technical skills."
                 },
                 SMM: {
-                    title: "Social Media Management",
-                    icon: <CodeIcon />,
+                    title: "Content Strategy",
+                    icon: <TagIcon />,
                     text:
                         "Plan and execute strategies to grow audiences, increase engagement, " +
                         "and amplify brand presence across social media platforms."
                 },
                 SEO: {
                     title: "SEO Optimization",
-                    icon: <CodeIcon />,
+                    icon: <PublicIcon />,
                     text:
                         "Enhance website visibility by improving search engine rankings through keyword research, " +
                         "on-page optimization, and analytics-based insights.",
@@ -101,78 +120,95 @@ export default {
 
         skills: {
             title: "My Skills",
-            coding: {
-                javascript: {
-                    icon: <CodeIcon />,
-                    title: "JavaScript",
-                    time: "1 year"
+            groups: [
+                {
+                    icon: <WebAssetIcon />,
+                    title: "Front-End Development",
+                    description: [
+                        "React.JS",
+                        "Javascript",
+                        "TypeScript",
+                        "Material-UI",
+                    ],
                 },
-                typescript: {
-                    icon: <CodeIcon />,
-                    title: "Typescript",
-                    time: "< 1 year"
+                {
+                    icon: <DnsIcon />,
+                    title: "Back-End Development",
+                    description: [
+                        "Node.JS",
+                        "Express",
+                        "Python",
+                    ],
                 },
-                react: {
-                    icon: <CodeIcon />,
-                    title: "React.js",
-                    time: "1 year"
+                {
+                    icon: <StorageIcon />,
+                    title: "Database Engineering",
+                    description: [
+                        "Firebase",
+                        "MySQL",
+                        "MongoDB",
+                        "Postgres",
+                    ],
                 },
-                swift: {
-                    icon: <CodeIcon />,
-                    title: "Swift",
-                    time: "< 1 year"
+                {
+                    icon: <GamepadIcon />,
+                    title: "Game Development",
+                    description: [
+                        "C++",
+                        "C",
+                        "Python",
+                        "Unreal Engine"
+                    ],
                 },
-                python: {
-                    icon: <CodeIcon />,
-                    title: "Python",
-                    time: "1 year"
+                {
+                    icon: <SourceIcon />,
+                    title: "Source Control",
+                    description: [
+                        "Git",
+                        "GitHub",
+                        "GitLab"
+                    ],
                 },
-                cpp: {
-                    icon: <CodeIcon />,
-                    title: "C++",
-                    time: "2 years"
+                {
+                    icon: <PublicIcon />,
+                    title: "Digital Marketing",
+                    description: [
+                        "SEO",
+                        "Content Strategy",
+                        "Advertising",
+                        "Community Management",
+                    ],
                 },
-                SQL: {
-                    icon: <CodeIcon />,
-                    title: "SQL",
-                    time: "< 1 year"
+                {
+                    icon: <SmartphoneIcon />,
+                    title: "Mobile App Development",
+                    description: [
+                        "React Native",
+                        "Swift",
+                        "iOS Development",
+                    ],
                 },
-                HTML: {
+                {
                     icon: <CodeIcon />,
-                    title: "HTML",
-                    time: "4 years"
+                    title: "Algorithms & Data Structures",
+                    description: [
+                        "Big O Notation",
+                        "Sorting Algorithms",
+                        "Graph Algorithms",
+                        "Dynamic Programming",
+                    ],
                 },
-                CSS: {
-                    icon: <CodeIcon />,
-                    title: "CSS",
-                    time: "4 years",
-                    last: true,
+                {
+                    icon: <MemoryIcon />,
+                    title: "AI & Machine Learning",
+                    description: [
+                        "Python AI Development",
+                        "TensorFlow",
+                        "OpenAI API",
+                        "Natural Language Processing (NLP)",
+                    ],
                 },
-            },
-
-            other: {
-                SEO: {
-                    icon: <CodeIcon />,
-                    title: "Search Engine Optimization",
-                    time: "3 years"
-                },
-                SMM: {
-                    icon: <CodeIcon />,
-                    title: "Social Media Management",
-                    time: "3 years"
-                },
-                edu: {
-                    icon: <CodeIcon />,
-                    title: "Education",
-                    time: "4 years"
-                },
-                video: {
-                    icon: <CodeIcon />,
-                    title: "Video Editing",
-                    time: "4 years",
-                    last: true,
-                },
-            },
+            ],
         },
     },
 
@@ -231,7 +267,7 @@ export default {
                 title: "Volunteer Moderator/Event Manager",
                 company: "JoshDub’s Discord Server",
                 date: "11/2019 - 05/2022",
-                description: "Assisted in managing a 90,000-member online community, while organizing events.",
+                description: "Assisted in managing a +90,000 member online community, while organizing events.",
             },
             army: {
                 title: "Combat Medic/Healthcare Specialist",
@@ -254,7 +290,7 @@ export default {
             },
         },
 
-        mainCerts: {
+        certs: {
 
             fullStack: {
                 title: "Full-Stack Development",
@@ -279,50 +315,68 @@ export default {
             },
 
         },
+    },
+    languages1: [
+        { name: "SQLite", icon: "https://cdn.jsdelivr.net/npm/simple-icons/icons/sqlite.svg" },
+        { name: "Express", icon: "https://cdn.jsdelivr.net/npm/simple-icons/icons/express.svg" },
+        { name: "Python", icon: "https://cdn.jsdelivr.net/npm/simple-icons/icons/python.svg" },
+        { name: "C++", icon: "https://cdn.jsdelivr.net/npm/simple-icons/icons/cplusplus.svg" },
+        { name: "Unreal Engine", icon: "https://cdn.jsdelivr.net/npm/simple-icons/icons/unrealengine.svg" },
+        { name: "Material-UI", icon: "https://cdn.jsdelivr.net/npm/simple-icons/icons/material-ui.svg" },
+        { name: "DaVinci Resolve", icon: "https://cdn.jsdelivr.net/npm/simple-icons/icons/davinciresolve.svg" },
+        { name: "React.JS", icon: "https://cdn.jsdelivr.net/npm/simple-icons/icons/react.svg" },
+        { name: "Firebase", icon: "https://cdn.jsdelivr.net/npm/simple-icons/icons/firebase.svg" },
+        { name: "Buffer", icon: "https://cdn.jsdelivr.net/npm/simple-icons/icons/buffer.svg" },
+        { name: "MongoDB", icon: "https://cdn.jsdelivr.net/npm/simple-icons/icons/mongodb.svg" },
+        { name: "Git", icon: "https://cdn.jsdelivr.net/npm/simple-icons/icons/git.svg" },
+        { name: "Swift", icon: "https://cdn.jsdelivr.net/npm/simple-icons/icons/swift.svg" },
+    ],
 
-        otherCerts: {
+    languages2: [
+        { name: "GitLab", icon: "https://cdn.jsdelivr.net/npm/simple-icons/icons/gitlab.svg" },
+        { name: "Node.JS", icon: "https://cdn.jsdelivr.net/npm/simple-icons/icons/nodejs.svg" },
+        { name: "GitHub", icon: "https://cdn.jsdelivr.net/npm/simple-icons/icons/github.svg" },
+        { name: "Postgres", icon: "https://cdn.jsdelivr.net/npm/simple-icons/icons/postgresql.svg" },
+        { name: "CSS", icon: "https://cdn.jsdelivr.net/npm/simple-icons/icons/css3.svg" },
+        { name: "Hootsuite", icon: "https://cdn.jsdelivr.net/npm/simple-icons/icons/hootsuite.svg" },
+        { name: "React Native", icon: "https://cdn.jsdelivr.net/npm/simple-icons/icons/react.svg" },
+        { name: "Vercel", icon: "https://cdn.jsdelivr.net/npm/simple-icons/icons/vercel.svg" },
+        { name: "HTML", icon: "https://cdn.jsdelivr.net/npm/simple-icons/icons/html5.svg" },
+        { name: "C", icon: "https://cdn.jsdelivr.net/npm/simple-icons/icons/c.svg" },
+        { name: "JavaScript", icon: "https://cdn.jsdelivr.net/npm/simple-icons/icons/javascript.svg" },
+        { name: "TypeScript", icon: "https://cdn.jsdelivr.net/npm/simple-icons/icons/typescript.svg" },
+        { name: "MySQL", icon: "https://cdn.jsdelivr.net/npm/simple-icons/icons/mysql.svg" },
+    ],
 
-            javascript: {
-                title: "JavaScript",
-                company: "Mimo.org",
-                img: "/assets/images/certs/JavaScriptCert.jpg",
-            },
-            typescript: {
-                title: "Typescript",
-                company: "Mimo.org",
-                img: "/assets/images/certs/TypescriptCert.jpg",
-            },
-            react: {
-                title: "React.js",
-                company: "Mimo.org",
-                img: "/assets/images/certs/ReactCert.jpg",
-            },
-            SQL: {
-                title: "SQL",
-                company: "Mimo.org",
-                img: "/assets/images/certs/SQLCert.jpg",
-            },
-            swift: {
-                title: "Swift",
-                company: "Mimo.org",
-                img: "/assets/images/certs/SwiftCert.jpg",
-            },
-            python: {
-                title: "Python",
-                company: "Mimo.org",
-                img: "/assets/images/certs/PythonCert.jpg",
-            },
-            HTML: {
-                title: "HTML",
-                company: "Mimo.org",
-                img: "/assets/images/certs/HTMLCert.jpg",
-            },
-            CSS: {
-                title: "CSS",
-                company: "Mimo.org",
-                img: "/assets/images/certs/CSSCert.jpg",
-                last: true,
-            },
-        }
-    }
+    contact: [
+        {
+            url: "https://www.linkedin.com/in/alexanderscastro/",
+            icon: <LinkedInIcon />,
+        },
+        {
+            url: "https://github.com/SergeantMurica",
+            icon: <GitHubIcon />,
+        },
+        {
+            url: "https://leetcode.com/u/SergeantMurica/",
+            icon: <CodeIcon />,
+        },
+        {
+            url: "https://www.facebook.com/SergeantMurica",
+            icon: <FacebookIcon />,
+        },
+        {
+            url: "https://www.youtube.com/c/SergeantMurica",
+            icon: <YouTubeIcon />,
+        },
+        {
+            url: "https://twitter.com/SergeantMurica",
+            icon: <XIcon />,
+        },
+        {
+            url: "https://instagram.com/sergeantmurica",
+            icon: <InstagramIcon />,
+        },
+    ]
+
 }

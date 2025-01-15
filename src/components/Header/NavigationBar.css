@@ -16,7 +16,7 @@
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
-.navbar_home {
+.navbar-home {
     color: #ffbd59;
     text-decoration: none;
     width: 50px;
@@ -29,24 +29,24 @@
     border-radius: 6px 0 0 6px;
 }
 
-.navbar_home:hover {
+.navbar-home:hover {
     background: black;
     -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     -moz-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
-.navbar_home.active {
+.navbar-home.active {
     background: black;
 }
 
-.navbar_links {
+.navbar-links {
     display: flex;
     gap: 15px;
     margin: 0 auto 0 20px ;
 }
 
-.nav_item {
+.nav-item {
     color: gray;
     background-color: #FFFFFF;
     border: 2px solid white;
@@ -56,8 +56,8 @@
     transition: color 0.3s;
 }
 
-.nav_item:hover,
-.nav_item.active {
+.nav-item:hover,
+.nav-item.active {
     color: black;
     background-color: #FFFFFF;
     border: 2px solid #ffbd59;
@@ -67,7 +67,7 @@
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
-.navbar_email {
+.navbar-email {
     color: gray;
     text-decoration: none;
     margin: 0;

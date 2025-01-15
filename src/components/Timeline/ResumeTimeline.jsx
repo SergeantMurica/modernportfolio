@@ -1,10 +1,9 @@
 import React, { useState } from "react";
 import {
-    CustomNolineSeparator,
-    CustomTimelineSeparator,
+    BasicNolineSeparator,
+    BasicTimelineSeparator,
 } from "./BasicTimeline.jsx";
 import { TimelineContent, TimelineItem } from "@mui/lab";
-import { Typography } from "@mui/material";
 
 // eslint-disable-next-line react/prop-types
 const ResumeTimeline = ({ title, company, date, text, img, last }) => {
@@ -23,32 +22,34 @@ const ResumeTimeline = ({ title, company, date, text, img, last }) => {
 
     return (
         <TimelineItem>
-            {last ? <CustomNolineSeparator /> : <CustomTimelineSeparator />}
+            {last ? <BasicNolineSeparator /> : <BasicTimelineSeparator />}
             <TimelineContent>
-                {!img && <Typography className="resume_title">{title}</Typography>}
-                {!img && <Typography className="resume_company">{company}</Typography>}
-                <Typography className="resume_date" variant="caption">
+                {!img && <div className="title-text">{title}</div>}
+                {!img && <div className="resume-company">{company}</div>}
+                <div className="resume-date">
                     {date}
-                </Typography>
-                <Typography className="resume_text" variant="body2">
+                </div>
+                <div className="resume-text">
                     {text}
-                </Typography>
+                </div>
                 {img && (
                     <>
                         <div
+                            className="cert-thumbnail-container"
                             onClick={() => showModal(img)} // Pass the img source explicitly
                         >
-                            <img className="cert_thumbnails" src={img} alt={title} />
-                            <div className="cert_thumbnail_overlay">
-                                <Typography className="cert_title">{title}</Typography>
-                                <Typography className="cert_company">{company}</Typography>
+                            <img className="cert-thumbnails" src={img} alt={title} />
+                            <div className="cert-thumbnail-overlay">
+                                <div className="cert-title">{title}</div>
+                                <br/>
+                                <div className="cert-company">{company}</div>
                             </div>
                         </div>
                         {isModalVisible && (
                             <div className="modal">
-                                <div className="modal_backdrop" onClick={hideModal}></div>
-                                <div className="modal_content">
-                                    <span id="modal_close_button" onClick={hideModal}>
+                                <div className="modal-backdrop" onClick={hideModal}></div>
+                                <div className="modal-content">
+                                    <span id="modal-close-button" onClick={hideModal}>
                                         &times;
                                     </span>
                                     <img alt={title} src={modalImgSrc} />

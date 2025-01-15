@@ -2,11 +2,13 @@
     padding: 0;
 }
 
-.timeline .timeline_header {
+.timeline .timeline-header {
     padding: 5px;
+    font-size: 24px;
+    font-weight: 500;
 }
 
-.timeline .timeline_first {
+.timeline .timeline-first {
     min-height: 100px;
 }
 
@@ -18,14 +20,14 @@
     display: none;
 }
 
-.timeline .timeline_dot_header {
+.timeline .timeline-dot-header {
     color: #ffbd59;
     background-color: #004aad;
     font-size: small;
     padding: 1px;
 }
 
-.timeline .timeline_dot {
+.timeline .timeline-dot {
     color: #ffbd59;
     border-color: #004aad;
     padding: 1px;
@@ -35,11 +37,11 @@
     background-color: #ffbd59;
 }
 
-.timeline .timeline_separator {
+.timeline .timeline-separator {
     padding: 0 12px 0 12px;
 }
 
-.timeline .timeline_content {
+.timeline .timeline-content {
     padding: 0;
     margin-bottom: 20px;
 }
