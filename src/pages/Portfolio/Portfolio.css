@@ -1,0 +1,51 @@
+.project-thumbnail {
+    width: 200px;
+    height: 134px;
+    overflow: hidden;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    -moz-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    transition: transform 0.5s ease;
+}
+
+.img-fluid {
+    width: 200px;
+    height: 134px;
+    overflow: hidden;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    -moz-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    transition: transform 0.5s ease;
+}
+
+.img-thumbnail {
+    display: grid;
+}
+
+.img-fluid:hover,
+.project-thumbnail:hover {
+    transform: scale(1.05);
+}
+
+
+
+
+.custom-tabs {
+
+}
+
+.custom-tab {
+
+}
+
+.custom-tab:hover {
+
+}
+
+.custom-tab-active {
+
+}

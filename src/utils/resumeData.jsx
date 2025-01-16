@@ -377,6 +377,26 @@ export default {
             url: "https://instagram.com/sergeantmurica",
             icon: <InstagramIcon />,
         },
-    ]
+    ],
+
+    portfolio: [
+        {
+            tag: "",
+            img: "/assets/images/certs/FullStackCert.jpg",
+            webimg: "",
+            url: "",
+            title: "Pokemon Website",
+            description: "",
+            path:"",
+        },
+        {
+            tag: "",
+            img: "",
+            webimg: "https://pokemon-gamepage.vercel.app/",
+            url: "",
+            title: "Pokemon Website",
+            description: "",
+        },
+    ],
 
 }

@@ -91,10 +91,10 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    margin: 5px auto;
-    font-size: 15px;
+    margin: auto;
+    font-size: 12px;
     font-weight: 500;
-    line-height: 18px;
+    line-height: 16px;
 }
 
 .skill-thumbnails .skill-description {
@@ -103,7 +103,7 @@
     margin: auto 20px;
     width: 100%;
     font-weight: 400;
-    line-height: 18px;
+    line-height: 16px;
     color: gray;
     font-size: 10px;
 }

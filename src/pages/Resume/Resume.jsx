@@ -23,7 +23,7 @@ const Resume = () => {
                         </div>
                     </Grid2>
                     <Grid2 item xs={12} sm={12} md={6}>
-                        <Grid2 container className="resume" spacing={{xs: 1.5, sm: 1.5, md: 1.5, lg: 5 }}>
+                        <Grid2 container spacing={{xs: 1.5, sm: 1.5, md: 1.5, lg: 5 }}>
                             <Grid2 item size={{ xs: 12, md: 6}}>
                                 <div >
                                     <BasicTimeline title={resumeData.resume.worktitle} icon={<WorkIcon/>}>

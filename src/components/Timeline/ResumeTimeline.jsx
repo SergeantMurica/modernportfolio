@@ -24,17 +24,17 @@ const ResumeTimeline = ({ title, company, date, text, img, last }) => {
         <TimelineItem>
             {last ? <BasicNolineSeparator /> : <BasicTimelineSeparator />}
             <TimelineContent>
-                {!img && <div className="title-text">{title}</div>}
-                {!img && <div className="resume-company">{company}</div>}
-                <div className="resume-date">
-                    {date}
-                </div>
-                <div className="resume-text">
-                    {text}
-                </div>
+                {!img &&
+                    <div>
+                        <div className="title-text">{title}</div>
+                        <div className="resume-company">{company}</div>
+                        <div className="resume-date">{date}</div>
+                        <div className="resume-text">{text}</div>
+                    </div>
+                }
                 {img && (
                     <>
-                        <div
+                    <div
                             className="cert-thumbnail-container"
                             onClick={() => showModal(img)} // Pass the img source explicitly
                         >

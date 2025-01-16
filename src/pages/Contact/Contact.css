@@ -22,7 +22,8 @@
      font-weight: 600;
  }
 
-.contact-socials {display: grid;
+.contact-socials {
+    display: grid;
     grid-template-columns: repeat(auto-fill, minmax(25px, 1fr));
     gap: 10px;
 }

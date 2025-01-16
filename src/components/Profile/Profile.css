@@ -22,7 +22,7 @@
 }
 
 .profile-image {
-    margin-top: -10px;
+    margin-top: -2px;
 }
 
 .profile-image img {
@@ -35,7 +35,7 @@
 .profile-information {
     top: 0;
     left: 0;
-    margin: -75px 10px 30px 0;
+    margin: -100px 10px 30px 0;
 }
 
 .profile-information .timeline .timeline-item-text {

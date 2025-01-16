@@ -8,20 +8,36 @@
     padding: 30px;
 }
 
-.resume {
-
+.resume-title {
+    color: black;
+    font-size: medium;
+    line-height: 22px;
+    white-space: pre-line;
 }
 
 .resume-company {
-
+    color: black;
+    font-size: small;
+    line-height: 22px;
+    white-space: pre-line;
 }
 
 .resume-date {
-
+    display: flex;
+    color: black;
+    font-size: x-small;
+    line-height: 22px;
+    white-space: pre-line;
 }
 
 .resume-text {
-
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 16px;
 }
 
 .resume-image {
