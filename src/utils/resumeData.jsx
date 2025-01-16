@@ -381,7 +381,7 @@ export default {
 
     portfolio: [
         {
-            tag: "",
+            tag: "React.JS",
             img: "/assets/images/certs/FullStackCert.jpg",
             webimg: "",
             url: "",
@@ -390,7 +390,7 @@ export default {
             path:"",
         },
         {
-            tag: "",
+            tag: "React.JS",
             img: "",
             webimg: "https://pokemon-gamepage.vercel.app/",
             url: "",
