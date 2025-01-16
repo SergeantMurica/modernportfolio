@@ -7,7 +7,7 @@ import {TimelineDot} from "@mui/lab";
 
 const Homepage = () => {
     return (
-        <Container className="home-container">
+        <Container className="page-container">
 
 
             {/*About Section*/}

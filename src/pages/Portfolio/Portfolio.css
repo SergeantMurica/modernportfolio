@@ -1,48 +1,12 @@
-.project-thumbnail {
-    width: 200px;
-    height: 134px;
-    overflow: hidden;
-    border: 1px solid #ccc;
-    border-radius: 8px;
-    -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    -moz-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    transition: transform 0.5s ease;
-}
-
-.img-fluid {
-    width: 200px;
-    height: 134px;
-    overflow: hidden;
-    border: 1px solid #ccc;
-    border-radius: 8px;
-    -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    -moz-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    transition: transform 0.5s ease;
-}
-
-.img-thumbnail {
-    display: grid;
-}
-
-.img-fluid:hover,
-.project-thumbnail:hover {
-    transform: scale(1.05);
-}
-
-
-
-
 .custom-tabs {
 
 }
 
-.custom-tab {
+.custom-tab-inactive {
 
 }
 
-.custom-tab:hover {
+.custom-tab-inactive:hover {
 
 }
 
@@ -51,6 +15,45 @@
 }
 
 .project-card {
+    width: 160px;
+    height: 150px;
+    overflow: hidden;
+    border-radius: 8px;
+    transition: transform 0.5s ease;
+
 }
 
-.project
+.project-card:hover {
+    transform: scale(1.05);
+    -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    -moz-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.project-card .project-card-media {
+    width: 160px;
+    height: 90px;
+}
+
+.project-card .project-card-title {
+}
+
+.project-card .project-card-caption {
+}
+
+.project-card-description {
+}
+
+.project-card-link {
+    text-decoration: none;
+}
+
+.dialog {
+}
+
+.dialog-img {
+}
+
+.dialog-link {
+    text-decoration: none;
+}

@@ -14,7 +14,7 @@ import './CertificateThumbnail.css'
 const Resume = () => {
     return (
         <div>
-            <Container className="resume-container">
+            <Container className="page-container">
                 <Grid2 container spacing={{xs: 1.5, sm: 1.5, md: 1.5, lg: 5 }}>
                     <Grid2 item size={{ xs: 12, sm: 12, md: 12, lg: 4}}>
                         <div  className="heading-text">

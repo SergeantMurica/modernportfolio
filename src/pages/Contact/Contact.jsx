@@ -15,7 +15,7 @@ import './Contact.css'
 const Contact = () => {
     return (
         <div>
-            <Container fluid className="contact-container">
+            <Container fluid className="page-container">
                 {/*Contact Page*/}
                 <Grid2 container spacing={5}>
 
