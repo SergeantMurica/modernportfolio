@@ -15,7 +15,7 @@ import './Contact.css'
 const Contact = () => {
     return (
         <div>
-            <Container fluid className="page-container">
+            <Container className="page-container">
                 {/*Contact Page*/}
                 <Grid2 container spacing={5}>
 
@@ -66,7 +66,7 @@ const Contact = () => {
                                         <Grid2 item size={{xs: 12}} className="contact-socials">
                                             {resumeData.contact.map(element => (
                                                 <a
-                                                    key={element}
+                                                    key={element.key}
                                                     href={element.url}
                                                     target="-blank"
                                                     rel="noopener noreferrer"

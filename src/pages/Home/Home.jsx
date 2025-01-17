@@ -95,7 +95,7 @@ const Homepage = () => {
                                 </div>
                                 {skill.description.map((element) => (
                                     <div key={element} className="skill-description">
-                                        <TimelineDot variant={"outlined"} className='skill-dot'/>
+                                        <TimelineDot className='skill-dot'/>
                                         <div className="skill-description">
                                             {element}
                                         </div>

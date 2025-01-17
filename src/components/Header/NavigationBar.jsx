@@ -24,7 +24,7 @@ const NavigationBar = () => {
                     </NavLink>
                 ))}
             </div>
-            <div className="navbar-email">
+            <div>
                 <CustomButton text="Email Me" icon={<EmailIcon/>} link="mailto:castroalexander1995@outlook.com" />
             </div>
         </nav>

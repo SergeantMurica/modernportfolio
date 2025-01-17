@@ -21,20 +21,20 @@
 }
 
 .timeline .timeline-dot-header {
-    color: #ffbd59;
-    background-color: #004aad;
+    color: var(--main-color);
+    background-color: var(--secondary-color);
     font-size: small;
     padding: 1px;
 }
 
 .timeline .timeline-dot {
-    color: #ffbd59;
-    border-color: #004aad;
+    color: var(--main-color);
+    border-color: var(--secondary-color);
     padding: 1px;
 }
 
 .timeline .MuiTimelineConnector-root {
-    background-color: #ffbd59;
+    background-color: var(--main-color);
 }
 
 .timeline .timeline-separator {

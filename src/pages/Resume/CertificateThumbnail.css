@@ -4,16 +4,13 @@
     display: inline-block;
     cursor: pointer;
     overflow: hidden;
-    border: 2px solid white;
     border-radius: 8px;
     transition: transform 0.3s, box-shadow 0.3s;
 }
 
 .cert-thumbnail-container:hover {
     transform: scale(1.05);
-    -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    -moz-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    box-shadow: 0 4px 8px 0 var(--shadow-color), 0 6px 20px 0 var(--shadow-color);
     cursor: pointer;
 }
 
@@ -32,7 +29,7 @@
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(0, 0, 0, 0.6);
+    background: var(--shading-color);
     color: white;
     display: flex;
     flex-direction: column;
@@ -91,7 +88,7 @@
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(0, 0, 0, 0.5);
+    background: var(--shading-color);
     backdrop-filter: blur(8px);
     cursor: pointer;
     z-index: 10;
@@ -100,8 +97,9 @@
 /* Modal content */
 .modal-content {
     position: relative;
-    max-width: 70%;
-    background: white;
+    max-width: 60%;
+    max-height: 95%;
+    background: var(--background-color);
     border-radius: 8px;
     padding: 16px;
     z-index: 20;
@@ -125,7 +123,7 @@
     right: 8px;
     font-size: 32px;
     color: #fff;
-    background: rgba(0, 0, 0, 0.7);
+    background: var(--shadow-color);
     border: none;
     border-radius: 50%;
     width: 50px;
@@ -138,25 +136,6 @@
 }
 
 #modal-close-button:hover {
-    background: rgba(0, 0, 0, 0.9);
+    background: var(--shading-color);
 }
 
-
-{/* Media */}
-@media (max-width: 1200px) {
-    .modal-content {
-        max-width: 90%;
-    }
-}
-
-@media (max-width: 750px) {
-    .modal-content {
-        max-width: 95%;
-    }
-}
-
-@media (max-width: 500px) {
-    .modal-content {
-        max-width: 98%;
-    }
-}

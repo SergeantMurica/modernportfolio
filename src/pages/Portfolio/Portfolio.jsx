@@ -1,17 +1,10 @@
 import React, {useState} from 'react'
 import './Portfolio.css'
 import {
-    Card,
-    CardActionArea,
-    CardContent,
-    CardMedia,
-    Container,
+    Card, CardActionArea, CardContent,
+    CardMedia, Container, DialogTitle,
     Dialog, DialogActions, DialogContent,
-    DialogTitle,
-    Grid2,
-    Grow,
-    Tab,
-    Tabs
+    Grid2, Grow, Tab, Tabs
 } from "@mui/material";
 import resumeData from "../../utils/resumeData.jsx";
 import ExitToAppIcon from '@mui/icons-material/ExitToApp';
@@ -70,7 +63,7 @@ const Portfolio = () => {
 
                     {/*Projects*/}
                     <Grid2 item size={12}>
-                        <Grid2 container spacing={1}>
+                        <Grid2 container spacing={3}>
                             {resumeData.portfolio.map((project) => (
                                 <>
                                     {tabValue === project.tag || tabValue === "All" ? (
@@ -103,15 +96,15 @@ const Portfolio = () => {
 
 
             {/*Dialog Window*/}
-            <Dialog open={projectDialog} onClose={() => setProjectDialog(false)} className="dialog">
-                <DialogTitle onClose={() => setProjectDialog(false)}>
+            <Dialog open={projectDialog} onClose={() => setProjectDialog(false)} className="dialog-card">
+                <DialogTitle onClose={() => setProjectDialog(false)} className="dialog-title">
                     {projectDialog.title}
                 </DialogTitle>
-                <DialogContent>
+                <DialogContent className="dialog-content">
                     {projectDialog.description}
                         <img src={projectDialog.img} alt={projectDialog.title} />
                 </DialogContent>
-                <DialogActions>
+                <DialogActions className="dialog-actions">
                         <div>
                             <a href={projectDialog.url} target="_blank" className="dialog-link">
                                 Go to < ExitToAppIcon />

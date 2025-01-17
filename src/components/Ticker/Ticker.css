@@ -1,7 +1,7 @@
 .ticker-container {
     overflow: hidden;
     white-space: nowrap;
-    background-color: white;
+    background-color: var(--background-color);
     margin: 20px -24px 20px -24px;
     display: flex;
     align-items: center;
@@ -9,8 +9,15 @@
 }
 
 .ticker1 {
+    color: var(--main-color);
     display: inline-flex;
     animation: scroll-left 30s linear infinite;
+    .icon {
+        width: 24px;
+        height: 24px;
+        margin-right: 20px;
+        margin-left: 20px;
+    }
 }
 
 .ticker1:hover {
@@ -18,8 +25,15 @@
 }
 
 .ticker2 {
-     display: inline-flex;
-     animation: scroll-right 30s linear infinite;
+    color: var(--main-color);
+    display: inline-flex;
+    animation: scroll-right 30s linear infinite;
+    .icon {
+        width: 24px;
+        height: 24px;
+        margin-right: 20px;
+        margin-left: 20px;
+    }
  }
 
 .ticker2:hover {
@@ -32,12 +46,7 @@
     margin: 0 20px;
 }
 
-.icon {
-    width: 24px;
-    height: 24px;
-    margin-right: 20px;
-    margin-left: 20px;
-}
+
 
 /* Ticker moving left */
 @keyframes scroll-left {

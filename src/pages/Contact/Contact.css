@@ -1,14 +1,14 @@
 .contact-information {
     margin: 2px 0 12px 0;
     font-size: 13px;
-    color: darkslategrey;
+    color: var(--caption-text-color);
     font-weight: 500;
 }
 
 .contact-information span {
      margin: 2px 0 12px 0;
      font-size: 13px;
-     color: black;
+     color: var(--heading-text-color);
      font-weight: 600;
  }
 

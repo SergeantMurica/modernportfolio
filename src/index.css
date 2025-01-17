@@ -1,3 +1,26 @@
+:root {
+    /* Core Colors */
+    --main-color: #4A90E2; /* Vibrant blue for primary elements */
+    --secondary-color: #50E3C2; /* Teal for secondary accents */
+
+    /* Text Colors */
+    --heading-text-color: #1A1A1A; /* Dark gray for headings */
+    --body-text-color: #4F4F4F; /* Neutral gray for body text */
+    --caption-text-color: lightslategray; /* Light gray for caption text */
+    --active-link-color: black; /* White for active states */
+    --inactive-link-color: #BDBDBD; /* Light gray for inactive links */
+
+    /* UI Elements */
+    --shadow-color: rgba(0, 0, 0, 0.31); /* Subtle shadow for depth */
+    --border-color: #E0E0E0; /* Light gray for borders */
+
+    /* Additional Colors */
+    --background-color: #F9F9F9; /* Soft off-white background */
+    --shading-color: rgba(0, 0, 0, 0.69); /* Soft off-white background */
+    --highlight-color: #FF6B6B; /* Red accent for important elements */
+
+}
+
 * {
     box-sizing: border-box;
     margin: 0;
@@ -6,7 +29,7 @@
 body {
     font-family: 'Open Sans', sans-serif;
     -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
     overflow-x: hidden;
-    background: white url("../public/assets/images/background.png") round center center fixed;
+    background: var(--background-color) url("../public/assets/images/background.png") round center center fixed;
+    color: var(--body-text-color);
 }

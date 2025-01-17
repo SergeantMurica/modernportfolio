@@ -1,59 +1,88 @@
 .custom-tabs {
 
+    .custom-tab-inactive {
+
+    }
+
+    .custom-tab-inactive:hover {
+
+    }
+
+    .custom-tab-active {
+
+    }
 }
 
-.custom-tab-inactive {
-
-}
-
-.custom-tab-inactive:hover {
-
-}
-
-.custom-tab-active {
-
-}
 
 .project-card {
     width: 160px;
     height: 150px;
     overflow: hidden;
     border-radius: 8px;
+    border: 1px solid var(--border-color);
     transition: transform 0.5s ease;
-
+    .project-card-media {
+        width: 160px;
+        height: 90px;
+    }
+    .project-card-title {
+    }
+    .project-card-caption {
+    }
+    .project-card-link {
+        text-decoration: none;
+    }
 }
 
 .project-card:hover {
-    transform: scale(1.05);
-    -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    -moz-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    transform: scale(1.25);
+    -webkit-box-shadow: 0 4px 8px 0 var(--shadow-color), 0 6px 20px 0 var(--shadow-color);
+    -moz-box-shadow: 0 4px 8px 0 var(--shadow-color), 0 6px 20px 0 var(--shadow-color);
+    box-shadow: 0 4px 8px 0 var(--shadow-color), 0 6px 20px 0 var(--shadow-color);
+    z-index: 10;
 }
 
-.project-card .project-card-media {
-    width: 160px;
-    height: 90px;
+.dialog-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    .dialog-title {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+    .dialog-content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+    .dialog-actions {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        text-decoration: none;
+    }
+    .dialog-link {
+        display: flex;
+        text-decoration: none;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        gap: 12px;
+        color: var(--inactive-link-color);
+    }
+    .dialog-link:hover {
+        text-decoration: none;
+        color: var(--active-link-color);
+    }
 }
 
-.project-card .project-card-title {
-}
 
-.project-card .project-card-caption {
-}
 
-.project-card-description {
-}
 
-.project-card-link {
-    text-decoration: none;
-}
-
-.dialog {
-}
-
-.dialog-img {
-}
-
-.dialog-link {
-    text-decoration: none;
-}

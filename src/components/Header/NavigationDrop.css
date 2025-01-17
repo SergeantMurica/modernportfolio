@@ -1,40 +1,42 @@
 .dropdown-navbar {
+    background-color: var(--background-color);
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 10px;
-    background-color: white;
     position: sticky;
     top: 0;
     z-index: 1000;
-    color: black; /* Black text for contrast */
-    -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    -moz-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    -webkit-box-shadow: 0 4px 8px 0 var(--shadow-color), 0 6px 20px 0 var(--shadow-color);
+    -moz-box-shadow: 0 4px 8px 0 var(--shadow-color), 0 6px 20px 0 var(--shadow-color);
+    box-shadow: 0 4px 8px 0 var(--shadow-color), 0 6px 20px 0 var(--shadow-color);
 }
 
 .dropdown-home {
-    color: gray;
+    color: var(--inactive-link-color);
     text-decoration: none;
+    transition: background-color 0.3s;
+    -moz-transition: transform 0.5s ease;
 }
 
-.dropdown-home:hover {
-    color: black;
-}
-
+.dropdown-home:hover,
 .dropdown-home.active {
-    color: #ffbd59;
+    color: var(--main-color);
+    transform: scale(1.05);
 }
 
 .menu-button {
     background: none;
     border: none;
-    color: gray;
+    color: var(--inactive-link-color);
     cursor: pointer;
+    transition: background-color 0.3s;
+    -moz-transition: transform 0.5s ease;
 }
 
 .menu-button:hover {
-    color: #ffbd59;
+    color: var(--main-color);
+    transform: scale(1.05);
 }
 
 .dropdown-menu {
@@ -42,7 +44,7 @@
     top: 60px;
     left: 0;
     width: 100%;
-    background-color: ghostwhite;
+    background-color: var(--background-color);
     padding: 10px 0;
     display: flex;
     flex-direction: column;
@@ -50,14 +52,15 @@
 }
 
 .dropdown-item {
-    color: black;
+    color: var(--inactive-link-color);
     padding: 10px 20px;
     text-decoration: none;
     transition: background-color 0.3s;
-    border: ghostwhite solid 1px;
+    -moz-transition: transform 0.5s ease;
+    border: var(--background-color) solid 1px;
 }
 
 .dropdown-item:hover, .dropdown-item.active {
-    border: ghostwhite solid 1px;
-    color: #ffbd59;
+    color: var(--main-color);
+    transform: scale(1.05);
 }

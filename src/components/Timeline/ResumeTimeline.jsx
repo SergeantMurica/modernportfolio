@@ -39,12 +39,14 @@ const ResumeTimeline = ({ title, company, date, text, img, last }) => {
                             onClick={() => showModal(img)} // Pass the img source explicitly
                         >
                             <img className="cert-thumbnails" src={img} alt={title} />
-                            <div className="cert-thumbnail-overlay">
-                                <div className="cert-title">{title}</div>
-                                <br/>
-                                <div className="cert-company">{company}</div>
-                            </div>
+                        <div className="cert-thumbnail-overlay">
+                            <div className="cert-title">{title}</div>
+                            <br/>
+                            <div className="cert-company">Earned from {company}</div>
+                            <br/>
+                            <div className="cert-company">Click To View</div>
                         </div>
+                    </div>
                         {isModalVisible && (
                             <div className="modal">
                                 <div className="modal-backdrop" onClick={hideModal}></div>

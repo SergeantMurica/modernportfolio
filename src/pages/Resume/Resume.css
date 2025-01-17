@@ -1,26 +1,27 @@
 .resume-title {
-    color: black;
+    color: var(--heading-text-color);
     font-size: medium;
     line-height: 22px;
     white-space: pre-line;
 }
 
 .resume-company {
-    color: black;
+    color: var(--caption-text-color);
     font-size: small;
     line-height: 22px;
     white-space: pre-line;
 }
 
 .resume-date {
+    color: var(--caption-text-color);
     display: flex;
-    color: black;
     font-size: x-small;
     line-height: 22px;
     white-space: pre-line;
 }
 
 .resume-text {
+    color: var(--body-text-color);
     display: flex;
     align-items: center;
     justify-content: center;

@@ -350,30 +350,37 @@ export default {
 
     contact: [
         {
+            key: "LinkedIn",
             url: "https://www.linkedin.com/in/alexanderscastro/",
             icon: <LinkedInIcon />,
         },
         {
+            key: "Github",
             url: "https://github.com/SergeantMurica",
             icon: <GitHubIcon />,
         },
         {
+            key: "LeetCode",
             url: "https://leetcode.com/u/SergeantMurica/",
             icon: <CodeIcon />,
         },
         {
+            key: "Facebook",
             url: "https://www.facebook.com/SergeantMurica",
             icon: <FacebookIcon />,
         },
         {
+            key: "YouTube",
             url: "https://www.youtube.com/c/SergeantMurica",
             icon: <YouTubeIcon />,
         },
         {
+            key: "X",
             url: "https://twitter.com/SergeantMurica",
             icon: <XIcon />,
         },
         {
+            key: "Instagram",
             url: "https://instagram.com/sergeantmurica",
             icon: <InstagramIcon />,
         },
@@ -391,7 +398,7 @@ export default {
         },
         {
             tag: "React.JS",
-            img: "https://pokemon-gamepage.vercel.app/",
+            img: "",
             url: "",
             title: "Pokemon Website",
             description: "A long description",
