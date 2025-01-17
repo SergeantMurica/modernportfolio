@@ -1,15 +1,28 @@
+import React, { useState } from 'react';
 import { Link, NavLink, useLocation } from 'react-router-dom';
 import HomeIcon from '@mui/icons-material/Home';
+import NightsStayIcon from '@mui/icons-material/NightsStay';
+import LightModeIcon from '@mui/icons-material/LightMode';
 import websiteData from '../../utils/websiteData.jsx';
 import CustomButton from '../Button/Button.jsx';
-import EmailIcon from '@mui/icons-material/Email';
 import './NavigationBar.css';
+
 
 const NavigationBar = () => {
     const location = useLocation();
+    const [isDarkMode, setIsDarkMode] = useState(() => {
+        return localStorage.getItem('theme') === 'dark';
+    });
+
+    const toggleTheme = () => {
+        const newTheme = !isDarkMode;
+        setIsDarkMode(newTheme);
+        document.body.classList.toggle('dark-mode', newTheme);
+        localStorage.setItem('theme', newTheme ? 'dark' : 'light');
+    };
 
     return (
-        <nav className="navbar">
+        <nav className={`navbar ${isDarkMode ? 'dark' : ''}`}>
             <Link to="/" className={`navbar-home ${location.pathname === "/" ? 'active' : ''}`}>
                 <HomeIcon fontSize="large" />
             </Link>
@@ -25,10 +38,11 @@ const NavigationBar = () => {
                 ))}
             </div>
             <div>
-                <CustomButton text="Email Me" icon={<EmailIcon/>} link="mailto:castroalexander1995@outlook.com" />
+                <CustomButton text={isDarkMode ? "Light Mode" : "Dark Mode"} onClick={toggleTheme} icon={isDarkMode ? <LightModeIcon/> : <NightsStayIcon />}/>
             </div>
         </nav>
     );
 };
 
 export default NavigationBar;
+

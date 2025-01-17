@@ -1,7 +1,7 @@
-import React from 'react'
+import React, {useRef, useState} from 'react'
 import {Container, Grid2, TextField} from "@mui/material";
 import resumeData from "../../utils/resumeData.jsx";
-import CustomButton from "../../components/Button/Button.jsx";
+import EmailForm from "../../components/Email/Email.jsx";
 
 
 
@@ -10,9 +10,9 @@ import './Contact.css'
 
 
 
-
-
 const Contact = () => {
+
+
     return (
         <div>
             <Container className="page-container">
@@ -29,21 +29,8 @@ const Contact = () => {
                                     Contact Form
                                 </div>
                             </Grid2>
-                            <Grid2 item size={{xs: 12}}>
-                                <Grid2 container spacing={3}>
-                                    <Grid2 item size={{xs: 6}}>
-                                        <TextField fullWidth={true} label="Name" name="name" />
-                                    </Grid2>
-                                    <Grid2 item size={{xs: 6}}>
-                                        <TextField fullWidth={true} label="Email" name="email" />
-                                    </Grid2>
-                                    <Grid2 item size={{xs: 12}}>
-                                        <TextField fullWidth={true} multiline={true} rows={{xs: 4, md: 12}} label="Message" name="message" />
-                                    </Grid2>
-                                    <Grid2 item>
-                                        <CustomButton text="Submit"/>
-                                    </Grid2>
-                                </Grid2>
+                            <Grid2 item size={12}>
+                                <EmailForm />
                             </Grid2>
                         </Grid2>
                     </Grid2>

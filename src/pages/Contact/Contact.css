@@ -22,15 +22,39 @@
 
 /* Submit Button */
 
-.contact-container .custom-btn {
+.email-form .custom-btn {
     padding: 1px 12px;
     margin: 0;
 }
 
-.contact-container .custom-btn .btn-text {
+.email-form .custom-btn .btn-text {
     font-size: 14px;
 }
 
-.contact-container .custom-btn .btn-text > a {
+.email-form .custom-btn .btn-text > a {
     font-size: 14px;
 }
+
+.email-form {
+    margin: 2px 0 12px 0;
+    font-size: 13px;
+    color: var(--caption-text-color);
+    font-weight: 500;
+    .name-input,
+    .email-input {
+        width: 100%;
+        max-width: 100%;
+        border: none;
+        outline: none;
+        background: none;
+        margin: 0 5px auto 0;
+    }
+    .message-input {
+        width: 100%;
+        max-width: 100%;
+        border: none;
+        outline: none;
+        background: none;
+    }
+}
+
