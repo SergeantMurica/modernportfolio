@@ -4,7 +4,7 @@ import {
     Card, CardActionArea, CardContent,
     CardMedia, Container, DialogTitle,
     Dialog, DialogActions, DialogContent,
-    Grid2, Grow, Tab, Tabs
+    Grid2, Grow
 } from "@mui/material";
 import resumeData from "../../utils/resumeData.jsx";
 import ExitToAppIcon from '@mui/icons-material/ExitToApp';
@@ -36,26 +36,26 @@ const Portfolio = () => {
                     <Grid2 item size={12}>
                         <Grid2 container spacing={1}>
                             <Grid2 item size={12}>
-                                <Tabs value={tabValue}
-                                      indicatorColor="white"
-                                      className="custom-tabs"
-                                      onChange={(event, newValue) => setTabValue(newValue)}
-                                >
-                                    <Tab label="All"
-                                         value="All"
-                                         className={tabValue === "All" ? "custom-tab-active" : "custom-tab-inactive"}
-                                    />
+                                <Grid2 item size={12}>
+                                    <div className="tabs-wrapper">
+                                        <div
+                                            className={`custom-tab ${tabValue === "All" ? "custom-tab-active" : "custom-tab-inactive"}`}
+                                            onClick={() => setTabValue("All")}
+                                        >
+                                            All
+                                        </div>
+                                        {[...new Set(resumeData.portfolio.map((item) => item.tag))].map((tag) => (
+                                            <div
+                                                key={tag}
+                                                className={`custom-tab ${tabValue === tag ? "custom-tab-active" : "custom-tab-inactive"}`}
+                                                onClick={() => setTabValue(tag)}
+                                            >
+                                                {tag}
+                                            </div>
+                                        ))}
+                                    </div>
+                                </Grid2>
 
-                                    {[...new Set(resumeData.portfolio.map((item) => item.tag))].map((tag) => (
-                                        <Tab
-                                            key={tag}
-                                            label={tag}
-                                            value={tag}
-                                            className={tabValue === tag ? "custom-tab-active" : "custom-tab-inactive"}
-                                        />
-                                    ))}
-
-                                </Tabs>
                             </Grid2>
                         </Grid2>
                     </Grid2>
@@ -71,12 +71,14 @@ const Portfolio = () => {
                                             <Grow in timeout={1000}>
                                                 <Card onClick={() => setProjectDialog(project)}>
                                                     <CardActionArea>
-                                                        <CardMedia className="project-card-media"
-                                                                   image={project.image}
-                                                                   title={project.title}
+                                                        <CardMedia
+                                                            component="img"
+                                                            className="project-card-media"
+                                                            image={project.image}
+                                                            title={project.title}
                                                         />
 
-                                                        <CardContent>
+                                                        <CardContent className="project-card-content">
                                                             <>
                                                                 <div className="project-card-title">{project.title}</div>
                                                                 <div className="project-card-caption">{project.caption}</div>
@@ -106,7 +108,7 @@ const Portfolio = () => {
                     {projectDialog.title}
                 </DialogTitle>
                 <img src={projectDialog.image} alt={projectDialog.title} className="dialog-img"/>
-                <DialogContent>
+                <DialogContent className="dialog-content">
                     <span className="dialog-description">{projectDialog.description}</span>
                 </DialogContent>
                 <DialogActions className="dialog-actions">

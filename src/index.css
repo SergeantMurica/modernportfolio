@@ -7,18 +7,18 @@
         /* Text Colors */
         --heading-text-color: #F0F4F8;
         --body-text-color: #B0BEC5;
-        --caption-text-color: #90CAF9;
-        --active-link-color: #82B1FF;
-        --inactive-link-color: #4A90E2;
+        --caption-text-color: #82B1FF;
+        --active-link-color: #90CAF9;
+        --inactive-link-color: #1565C0;
 
         /* UI Elements */
         --shadow-color: rgba(255, 255, 255, 0.1);
-        --border-color: #E0E0E0;
-        --container-color: grey;
+        --border-color: #B0B0B0;
+        --container-color: #343434;
 
         /* Additional Colors */
         --background-color: #121212;
-        --shading-color: rgba(255, 255, 255, 0.1);
+        --shading-color: rgba(0, 0, 0, 0.1);
         --highlight-color: #50B5FF;
 
     }
@@ -29,13 +29,13 @@
     /* Text Colors */
     --heading-text-color: #1A1A1A;
     --body-text-color: #4F4F4F;
-    --caption-text-color: #B0BEC5;
+    --caption-text-color: #22B1DD;
     --active-link-color: #1565C0;
     --inactive-link-color: #90CAF9;
 
     /* UI Elements */
     --shadow-color: rgba(0, 0, 0, 0.31);
-    --border-color: #E0E0E0;
+    --border-color: #afafaf;
     --container-color: #F9F9FA;
 
     /* Additional Colors */

@@ -1,21 +1,19 @@
 .main-container {
     display: flex;
-    margin: 60px 0 0 0;
+    margin: 30px 0 0 0;
 }
 
 .page-container {
+    border: 2px solid var(--border-color);
     background-color: var(--container-color);
     border-radius: 6px;
-    -webkit-box-shadow: 0 4px 8px 0 var(--shadow-color), 0 6px 20px 0 var(--shadow-color);
-    -moz-box-shadow: 0 4px 8px 0 var(--shadow-color), 0 6px 20px 0 var(--shadow-color);
-    box-shadow: 0 4px 8px 0 var(--shadow-color), 0 6px 20px 0 var(--shadow-color);
+    -webkit-box-shadow: 0 var(--shadow-color), 0 var(--shadow-color);
+    -moz-box-shadow: 0 var(--shadow-color), 0 var(--shadow-color);
+    box-shadow: 0 var(--shadow-color), 0 var(--shadow-color);
     margin: 30px;
     padding: 30px;
 }
 
-.header{
-    width: 100%;
-}
 
 .heading-text {
     position: relative;
@@ -46,8 +44,72 @@
     margin: auto auto 10px auto;
 }
 
+.mobile-mode-toggle {
+    border: none;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    .custom-btn .btn-text > a,
+    .custom-btn .btn-text {
+        font-size: 12px !important;
+    }
+}
+
+.mobile-mode-toggle:hover {
+}
+
+
+
+
+/* CUSTOM TABS */
+.tabs-wrapper {
+    max-width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    margin: 10px auto;
+    min-width: 710px;
+}
+
+.custom-tab {
+    cursor: pointer;
+    border-radius: 4px;
+    color: var(--caption-text-color);
+    text-align: center;
+    min-width: 50px;
+    flex: 1 1 auto;
+    max-width: 200px;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.custom-tab:hover {
+    color: var(--highlight-color);
+    transform: scale(1.05);
+}
+
+.custom-tab-active {
+    color: var(--highlight-color);
+}
+
+
+
+
+
 @media (max-width: 991px) {
     .main-container {
-        margin: 15px 0 0 0;
+        margin: 30px 0 0 0;
+    }
+}
+
+@media (max-width: 950px) {
+    .tabs-wrapper {
+        min-width: 100%;
+    }
+}
+
+@media (max-width: 950px) {
+    .tabs-wrapper {
+        min-width: 0;
     }
 }

@@ -42,10 +42,10 @@ const Homepage = () => {
                 </Grid2>
                 <Grid2 size={{xs: 12}}>
                     <Grid2 container justifyContent='space-around' spacing={1}>
-                        {Object.keys(resumeData.home.services.thumbnail).map((key, index) => (
+                        {Object.keys(resumeData.home.services.thumbnail).map((key,) => (
                             <Grid2 item
                                    size={{xs: 12, sm: 5, md: 3, lg: 3}}
-                                   key={index}
+                                   key={key}
                                    className="service-thumbnails"
                             >
                                 <div className="service-icon">
@@ -81,8 +81,8 @@ const Homepage = () => {
                 <Grid2 item size={{xs: 12}}>
                     <Grid2 container justifyContent='space-around' spacing={1}>
                         {resumeData.home.skills.groups.map(skill => (
-                            // eslint-disable-next-line react/jsx-key
                             <Grid2
+                                key={skill.title}
                                 item
                                 size={{xs: 12, sm: 5, md: 3, lg: 3}}
                                 className="skill-thumbnails"

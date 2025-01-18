@@ -38,7 +38,7 @@
 }
 
 .service-thumbnails .service-description {
-    color: var(--body-text-color);
+    color: var(--caption-text-color);
     text-align: center;
     align-items: center;
     justify-content: center;
@@ -97,7 +97,7 @@
     width: 100%;
     font-weight: 400;
     line-height: 16px;
-    color: var(--body-text-color);
+    color: var(--caption-text-color);
     font-size: 10px;
 }
 

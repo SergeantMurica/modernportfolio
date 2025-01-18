@@ -3,7 +3,8 @@
     color: var(--body-text-color);
     margin: auto;
     background-color: var(--container-color);
-    border-radius: 10px;
+    border: 2px solid var(--border-color);
+    border-radius: 6px;
     padding: 20px 40px;
     display: flex;
     flex-direction: column; /* Stack items for smaller screens */
@@ -22,28 +23,28 @@
 
 /* Footer Text */
 .footer-text {
-    font-size: 0.9rem; /* Slightly smaller text for elegance */
+    font-size: 12px;
     line-height: 1.6;
     margin: 0;
 }
 
 /* Footer Links */
 .footer-link {
-    color: var(--secondary-color); /* Highlight links with a bright color */
+    color: var(--secondary-color);
     text-decoration: none;
     font-weight: bold;
     transition: color 0.3s ease-in-out;
 }
 
 .footer-link:hover {
-    color: var(--main-color); /* Slightly darker on hover */
-    text-decoration: underline; /* Underline effect on hover */
+    color: var(--main-color);
+    text-decoration: underline;
 }
 
 /* Responsive Design */
 @media (min-width: 768px) {
     .footer {
-        flex-direction: row; /* Align items horizontally on larger screens */
+        flex-direction: row;
     }
 
     .footer-left, .footer-right {

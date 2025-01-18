@@ -8,7 +8,7 @@
 .contact-information span {
      margin: 2px 0 12px 0;
      font-size: 13px;
-     color: var(--heading-text-color);
+     color: var(--body-text-color);
      font-weight: 600;
  }
 
@@ -42,19 +42,21 @@
     font-weight: 500;
     .name-input,
     .email-input {
+        background-color: var(--border-color);
         width: 100%;
         max-width: 100%;
-        border: none;
+        border: 1px solid var(--border-color);
+        border-radius: 4px;
         outline: none;
-        background: none;
         margin: 0 5px auto 0;
     }
     .message-input {
+        background-color: var(--border-color);
         width: 100%;
         max-width: 100%;
-        border: none;
+        border: 1px solid var(--border-color);
+        border-radius: 4px;
         outline: none;
-        background: none;
     }
 }
 

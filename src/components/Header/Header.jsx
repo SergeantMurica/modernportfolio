@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React from 'react';
 import {Routes, Route} from 'react-router-dom';
 import Homepage from "../../pages/Home/Home.jsx";
 import Portfolio from "../../pages/Portfolio/Portfolio.jsx";
@@ -8,29 +8,17 @@ import Contact from "../../pages/Contact/Contact.jsx";
 import NavigationBar from "./NavigationBar.jsx";
 import NavigationDrop from "./NavigationDrop.jsx";
 import BlogPost from "../Blog/BlogPosts.jsx";
+import useIsMobile from "../../hooks/IsMobile.jsx";
 
 
 
 const Header = () => {
 
-    const [isMobile, setIsMobile] = useState(window.innerWidth < 768);
-
-    useEffect(() => {
-        const handleResize = () => {
-            setIsMobile(window.innerWidth < 768);
-        };
-
-        window.addEventListener('resize', handleResize);
-
-        // Cleanup event listener on component unmount
-        return () => {
-            window.removeEventListener('resize', handleResize);
-        };
-    }, []);
+    const isMobile = useIsMobile(768);
 
     return (
-        <div className="App">
-            <div className="header">
+        <div>
+            <div>
                     {isMobile ? <NavigationDrop/> : <NavigationBar/>}
             </div>
             <div>
