@@ -35,9 +35,12 @@ const Portfolio = () => {
                     {/*Tabs*/}
                     <Grid2 item size={12}>
                         <Grid2 container spacing={1}>
-                            <Grid2 item size={12}>
-                                <Tabs value={tabValue}
+                            <Grid2 item size={10}>
+                                <Tabs
+                                      variant="scrollable"
+                                      value={tabValue}
                                       indicatorColor="white"
+                                      textColor="inherit"
                                       className="custom-tabs"
                                       onChange={(event, newValue) => setTabValue(newValue)}
                                 >
@@ -76,7 +79,7 @@ const Portfolio = () => {
                                                                    title={project.title}
                                                         />
 
-                                                        <CardContent>
+                                                        <CardContent className="project-card-content">
                                                             <>
                                                                 <div className="project-card-title">{project.title}</div>
                                                                 <div className="project-card-caption">{project.caption}</div>

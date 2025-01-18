@@ -43,11 +43,12 @@ const Blog = () => {
                     <Grid2 item size={12}>
                         <Grid2 container spacing={1}>
                             <Grid2 item size={12}>
-                                <Tabs
-                                    value={tabValue}
-                                    indicatorColor="white"
-                                    className="custom-tabs"
-                                    onChange={(event, newValue) => setTabValue(newValue)}
+                                <Tabs variant="scrollable"
+                                      value={tabValue}
+                                      indicatorColor="white"
+                                      textColor="inherit"
+                                      className="custom-tabs"
+                                      onChange={(event, newValue) => setTabValue(newValue)}
                                 >
                                     <Tab
                                         label="All"
