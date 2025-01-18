@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Link, NavLink, useLocation } from 'react-router-dom';
+import { NavLink, useLocation } from 'react-router-dom';
 import HomeIcon from '@mui/icons-material/Home';
 import NightsStayIcon from '@mui/icons-material/NightsStay';
 import LightModeIcon from '@mui/icons-material/LightMode';
@@ -23,9 +23,9 @@ const NavigationBar = () => {
 
     return (
         <nav className={`navbar ${isDarkMode ? 'dark' : ''}`}>
-            <Link to="/" className={`navbar-home ${location.pathname === "/" ? 'active' : ''}`}>
+            <NavLink to="/" className={`navbar-home ${location.pathname === "/" ? 'active' : ''}`}>
                 <HomeIcon fontSize="large" />
-            </Link>
+            </NavLink>
             <div className="navbar-links">
                 {Object.keys(websiteData.pages).map((key, index) => (
                     <NavLink

@@ -1,5 +1,6 @@
 .profile-container {
-    margin: auto;
+    position: fixed;
+    margin: 50px auto;
     padding: 20px;
     background-color: var(--background-color);
     border-radius: 10px;
@@ -86,8 +87,9 @@
 }
 
 
-@media (max-width: 1199px) {
+@media (max-width: 1200px) {
     .profile-container {
+        position: static;
         max-width: 400px;
     }
 }

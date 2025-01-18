@@ -1,5 +1,5 @@
-import React, {useRef, useState} from 'react'
-import {Container, Grid2, TextField} from "@mui/material";
+import React  from 'react'
+import {Container, Grid2} from "@mui/material";
 import resumeData from "../../utils/resumeData.jsx";
 import EmailForm from "../../components/Email/Email.jsx";
 

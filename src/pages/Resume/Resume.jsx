@@ -64,7 +64,7 @@ const Resume = () => {
                                                 <ResumeTimeline
                                                     title={resumeData.resume.certs[key].title}
                                                     company={resumeData.resume.certs[key].company}
-                                                    img={resumeData.resume.certs[key].img}
+                                                    img={resumeData.resume.certs[key].image}
                                                     last={resumeData.resume.certs[key].last}
                                                 />
                                             </div>

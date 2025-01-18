@@ -7,6 +7,7 @@ import Blog from "../../pages/Blog/Blog.jsx";
 import Contact from "../../pages/Contact/Contact.jsx";
 import NavigationBar from "./NavigationBar.jsx";
 import NavigationDrop from "./NavigationDrop.jsx";
+import BlogPost from "../Blog/BlogPosts.jsx";
 
 
 
@@ -39,6 +40,7 @@ const Header = () => {
                     <Route exact path="/Resume" element={<Resume/>}/>
                     <Route exact path="/Blog" element={<Blog/>}/>
                     <Route exact path="/Contact" element={<Contact/>}/>
+                    <Route path="/blog/:id" element={<BlogPost />} />
                 </Routes>
             </div>
         </div>

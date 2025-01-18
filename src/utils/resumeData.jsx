@@ -295,22 +295,22 @@ export default {
             fullStack: {
                 title: "Full-Stack Development",
                 company: "Mimo.org",
-                img: "/assets/images/certs/FullStackCert.jpg",
+                image: "/assets/images/certs/FullStackCert.jpg",
             },
             frontEnd: {
                 title: "Front-End Development",
                 company: "Mimo.org",
-                img: "/assets/images/certs/FrontEndCert.jpg",
+                image: "/assets/images/certs/FrontEndCert.jpg",
             },
             backEnd: {
                 title: "Back-End Development",
                 company: "Mimo.org",
-                img: "/assets/images/certs/BackEndCert.jpg",
+                image: "/assets/images/certs/BackEndCert.jpg",
             },
             ai: {
                 title: "AI Development in Python",
                 company: "Mimo.org",
-                img: "/assets/images/certs/PythonAICert.jpg",
+                image: "/assets/images/certs/PythonAICert.jpg",
                 last: true,
             },
 
@@ -389,7 +389,7 @@ export default {
     portfolio: [
         {
             tag: "React.JS",
-            img: "/assets/images/th.jpg",
+            image: "/assets/images/th.jpg",
             url: "",
             title: "Title",
             description: "A long description",
@@ -398,7 +398,7 @@ export default {
         },
         {
             tag: "React.JS",
-            img: "",
+            image: "",
             url: "",
             title: "Pokemon Website",
             description: "A long description",
@@ -407,8 +407,8 @@ export default {
         },
         {
             tag: "JavaScript",
-            img: "/assets/images/certs/FullStackCert.jpg",
-            url: "",
+            image: "https://static.canva.com/web/images/e01d35db7c198554ae022ee3216ee495.jpg",
+            url: "https://static.canva.com/web/images/e01d35db7c198554ae022ee3216ee495.jpg",
             title: "Title",
             description: "A long description",
             caption: "A short description",
@@ -416,7 +416,7 @@ export default {
         },
         {
             tag: "Typescript",
-            img: "/assets/images/certs/FullStackCert.jpg",
+            image: "/assets/images/certs/FullStackCert.jpg",
             url: "",
             title: "Title",
             description: "A long description",
@@ -425,7 +425,25 @@ export default {
         },
         {
             tag: "Python",
-            img: "/assets/images/certs/FullStackCert.jpg",
+            image: "/assets/images/certs/FullStackCert.jpg",
+            url: "",
+            title: "Title",
+            description: "A long description",
+            caption: "A short description",
+            iframe: false,
+        },
+        {
+            tag: "C++",
+            image: "https://www.canva.com/design/DAGWysgrrxw/XCuqxWu-ydk02dCySa8FMQ/view?utm_content=DAGWysgrrxw&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h27d6aad5e1",
+            url: "",
+            title: "Title",
+            description: "A long description",
+            caption: "A short description",
+            iframe: false,
+        },
+        {
+            tag: "Unreal Engine",
+            image: "/assets/images/certs/FullStackCert.jpg",
             url: "",
             title: "Title",
             description: "A long description",

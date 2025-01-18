@@ -34,7 +34,7 @@ const Portfolio = () => {
 
                     {/*Tabs*/}
                     <Grid2 item size={12}>
-                        <Grid2 container spacing={2}>
+                        <Grid2 container spacing={1}>
                             <Grid2 item size={12}>
                                 <Tabs value={tabValue}
                                       indicatorColor="white"
@@ -51,7 +51,7 @@ const Portfolio = () => {
                                             key={tag}
                                             label={tag}
                                             value={tag}
-                                            className={tabValue === "All" ? "custom-tab-active" : "custom-tab"}
+                                            className={tabValue === tag ? "custom-tab-active" : "custom-tab-inactive"}
                                         />
                                     ))}
 
@@ -63,16 +63,16 @@ const Portfolio = () => {
 
                     {/*Projects*/}
                     <Grid2 item size={12}>
-                        <Grid2 container spacing={3}>
+                        <Grid2 container spacing={1}>
                             {resumeData.portfolio.map((project) => (
                                 <>
                                     {tabValue === project.tag || tabValue === "All" ? (
-                                        <Grid2 item className="project-card">
+                                        <Grid2 item size={{xs: 12, sm: 6, md: 4, lg: 4}} className="project-card">
                                             <Grow in timeout={1000}>
                                                 <Card onClick={() => setProjectDialog(project)}>
                                                     <CardActionArea>
                                                         <CardMedia className="project-card-media"
-                                                                   image={project.img}
+                                                                   image={project.image}
                                                                    title={project.title}
                                                         />
 
@@ -96,20 +96,25 @@ const Portfolio = () => {
 
 
             {/*Dialog Window*/}
-            <Dialog open={projectDialog} onClose={() => setProjectDialog(false)} className="dialog-card">
+            <Dialog open={projectDialog}
+                    onClose={() => setProjectDialog(false)}
+                    className="dialog-card"
+                    maxWidth="lg"
+                    fullWidth
+            >
                 <DialogTitle onClose={() => setProjectDialog(false)} className="dialog-title">
                     {projectDialog.title}
                 </DialogTitle>
-                <DialogContent className="dialog-content">
-                    {projectDialog.description}
-                        <img src={projectDialog.img} alt={projectDialog.title} />
+                <img src={projectDialog.image} alt={projectDialog.title} className="dialog-img"/>
+                <DialogContent>
+                    <span className="dialog-description">{projectDialog.description}</span>
                 </DialogContent>
                 <DialogActions className="dialog-actions">
-                        <div>
-                            <a href={projectDialog.url} target="_blank" className="dialog-link">
-                                Go to < ExitToAppIcon />
-                            </a>
-                        </div>
+                    <div>
+                        <a href={projectDialog.url} target="_blank" className="dialog-link">
+                            Go to < ExitToAppIcon/>
+                        </a>
+                    </div>
                 </DialogActions>
             </Dialog>
         </div>
