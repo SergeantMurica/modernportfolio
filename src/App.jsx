@@ -14,7 +14,7 @@ const App = () => {
         <Grid2 item size={{ xs: 12, sm: 12, md: 12, lg: 4}}>
           <Profile/>
         </Grid2>
-        <Grid2 item size='grow'>
+        <Grid2 item size={{ xs: 12, sm: 12, md: 12, lg: 8}}>
           <Header/>
           <Footer/>
         </Grid2>

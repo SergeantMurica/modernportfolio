@@ -8,7 +8,7 @@ import {Container, Grid2} from "@mui/material";
 
 export const BlogPostFound = () => {
     const { id } = useParams();
-    const post = blogData.blogs.find((item) => item.id === parseInt(id));
+    const post = blogData.blogs.find((item) => item.id === id);
 
     return (
         <>
@@ -110,7 +110,7 @@ export const BlogPost404 = () => {
 
 const BlogPost = () => {
     const {id} = useParams();
-    const post = blogData.blogs.find((item) => item.id === parseInt(id));
+    const post = blogData.blogs.find((item) => item.id === id);
 
 
     return (
