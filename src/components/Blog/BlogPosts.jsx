@@ -1,7 +1,7 @@
 import React from "react";
 import { useParams } from "react-router-dom";
 import blogData from "../../utils/blogData.jsx";
-import {Container, Grid2, Tab, Tabs} from "@mui/material";
+import {Container, Grid2} from "@mui/material";
 
 const BlogPost = () => {
     const { id } = useParams();
