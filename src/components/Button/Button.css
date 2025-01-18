@@ -18,16 +18,11 @@
     -webkit-box-shadow: 0 4px 8px 0 var(--shadow-color), 0 6px 20px 0 var(--shadow-color);
     -moz-box-shadow: 0 4px 8px 0 var(--shadow-color), 0 6px 20px 0 var(--shadow-color);
     box-shadow: 0 4px 8px 0 var(--shadow-color), 0 6px 20px 0 var(--shadow-color);
-    .btn-text > a,
-    .btn-text,
-    .btn-icon-container {
-        color: var(--active-link-color)
-    }
 }
 
 .custom-btn .btn-icon-container {
     color: var(--inactive-link-color);
-    background: var(--background-color);
+    background-color: var(--container-color);
     border-radius: 50px;
     height: 30px;
     width: 30px;
@@ -52,6 +47,6 @@
     text-align: center;
     width: 100%;
     margin: 0 5px 0 5px;
-    color: var(--inactive-link-color);
+    color: var(--heading-text-color);
     text-decoration: none;
 }

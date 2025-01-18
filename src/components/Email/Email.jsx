@@ -15,9 +15,11 @@ const EmailForm = () => {
     const handleSubmit = async (e) => {
         e.preventDefault();
 
-        const serviceID = 'service_955xct9';
-        const templateID = 'template_tsqpjnq';
-        const publicKey = 'ejNtas6oWUoKJRdMI'
+
+        {/*  ADD YOUR OWN EMAIL.JS   */}
+        const serviceID = 'YourEmailJSServiceId';
+        const templateID = 'YourEmailJSTemplate';
+        const publicKey = 'YourEmailJSKey'
 
         const data = {
             service_id: serviceID,
@@ -26,7 +28,7 @@ const EmailForm = () => {
             template_params: {
                 from_name: name,
                 from_email: email,
-                to_name: "Alexander Castro",
+                to_name: "Your Name",
                 message: message,
             }
         }

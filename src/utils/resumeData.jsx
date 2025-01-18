@@ -24,11 +24,11 @@ import GamepadIcon from '@mui/icons-material/Gamepad';
 
 
 export default {
-    name: "Alexander Castro",
-    title: "Full Stack Developer",
-    birthday: "March 1st, 1995",
-    email: "castroalexander1995@outlook.com",
-    jobTitle: "Freelance Developer",
+    name: "Your Name",
+    title: "Desired Job Title",
+    birthday: "Insert Date",
+    email: "YourEmail@outlook.com",
+    jobTitle: "Current Job Title",
 
     socials: {
         Linkedin: {
@@ -58,16 +58,11 @@ export default {
         aboutMe: {
             title: "About me",
             start:
-                "I am a dedicated full-stack developer with a diverse background in military service, education, " +
-                "and social media marketing. My passion lies in crafting efficient and innovative web solutions " +
-                "that make a meaningful impact.",
+                "Write",
             mid:
-                "As a mental health advocate and content creator, I’ve channeled my personal experiences to help " +
-                "others navigate life’s challenges, building communities focused on awareness and support. " +
-                "This mission has shaped my commitment to leveraging technology to empower creators and foster positivity.",
+                "Your",
             end:
-                "I aspire to advance my career as a developer by designing tools and platforms that enable content " +
-                "creators to connect, inspire, and bring more joy into the lives of their audiences.",
+                "About Me",
         },
         services: {
             title: "My Services",
@@ -218,99 +213,30 @@ export default {
         certtitle: "My Certifications",
 
         work: {
-            free: {
-                title: "Freelancer",
-                company: "Self-Employed",
-                date: "08/2022 - Current",
-                description: "",
-            },
-            content: {
-                title: "Content Creator",
-                company: "Self-Employed",
-                date: "04/2021 - 12/2024",
-                description: "Produce content focused on mental health awareness and suicide prevention through gaming and entertainment.",
-                twitch: "1.5k followers",
-                tiktok: "21k followers",
-                youtube: "8k followers",
-            },
-            sales: {
-                title: "Sales Professional",
-                company: "Bell Honda",
-                date: "10/2023 - 11/2023",
-                description: "Engaged with clients to identify needs and deliver desired vehicle.",
-            },
-            DoD: {
-                title: "Director of Development",
-                company: "Veterans Gaming & Mental Health Mission",
-                date: "01/2023 - 05/2023",
-                description: "Led development initiatives to secure funding and build partnerships for the organization. While also designing and implemented strategic plans to enhance organizational growth.",
-            },
-            DoM: {
-                title: "Volunteer Director of Marketing",
-                company: "Veterans Gaming & Mental Health Mission",
-                date: "05/2022 - 01/2023",
-                description: "Managed SEO strategies, advertising campaigns, and the social media presence of the organization. Also redesigned the organization's website to improve functionality and engagement.",
-            },
-            wj: {
-                title: "Social Media Coordinator",
-                company: "Liftable Media",
-                date: "03/2022 - 8/2022",
-                description: "Planned, created, and scheduled content for Western Journal News. Helped establish a successful workflow for producing and distributing news shorts on TikTok, YouTube, and Instagram Reels.",
-            },
-            teach: {
-                title: "Substitute Teacher",
-                company: "DVUSD",
-                date: "09/2020 - 05/2021",
-                description: "Delivered flexible teaching solutions, adapting to various educational levels and classroom needs.",
-            },
-            dub: {
-                title: "Volunteer Moderator/Event Manager",
-                company: "JoshDub’s Discord Server",
-                date: "11/2019 - 05/2022",
-                description: "Assisted in managing a +90,000 member online community, while organizing events.",
-            },
-            army: {
-                title: "Combat Medic/Healthcare Specialist",
-                company: "U.S. Army",
+            job: {
+                title: "Job Title",
+                company: "Company Name",
                 date: "06/2013 - 06/2018",
-                description: "Delivered emergency medical treatment and primary care for soldiers in both normal, and critical situations.",
+                description: "Job description",
                 last: true,
             },
         },
 
         education: {
-            pol: {
-                major: "Bachelor of Science in Political Science",
-                minor:
-                    "Completed with concentrations in International Relations, Public Administration, and a minor in History. " +
-                    "While also completing Leadership Fellows and NSLS curriculum and requirements",
-                school: "Methodist University",
+            edu: {
+                major: "Bachelor of Science in Something",
+                description: "description",
+                school: "University Name",
                 date: "09/2018 - 05/2020",
                 last: true,
             },
         },
 
         certs: {
-
-            fullStack: {
-                title: "Full-Stack Development",
-                company: "Mimo.org",
-                image: "/assets/images/certs/FullStackCert.jpg",
-            },
-            frontEnd: {
-                title: "Front-End Development",
-                company: "Mimo.org",
-                image: "/assets/images/certs/FrontEndCert.jpg",
-            },
-            backEnd: {
-                title: "Back-End Development",
-                company: "Mimo.org",
-                image: "/assets/images/certs/BackEndCert.jpg",
-            },
-            ai: {
-                title: "AI Development in Python",
-                company: "Mimo.org",
-                image: "/assets/images/certs/PythonAICert.jpg",
+            cert: {
+                title: "Certificate Title",
+                company: "Company Name",
+                image: "/assets/images/certs/certificate1.jpg",
                 last: true,
             },
 
@@ -388,67 +314,44 @@ export default {
 
     portfolio: [
         {
-            tag: "React.JS",
-            image: "/assets/images/th.jpg",
+            tag: "React.js",
+            image: "/assets/images/portfolio/portfolio4.jpg",
             url: "",
             title: "Title",
             description: "A long description",
             caption: "A short description",
-            iframe: false,
-        },
-        {
-            tag: "React.JS",
-            image: "",
-            url: "",
-            title: "Pokemon Website",
-            description: "A long description",
-            caption: "A short description",
-            iframe: true,
         },
         {
             tag: "JavaScript",
-            image: "https://static.canva.com/web/images/e01d35db7c198554ae022ee3216ee495.jpg",
-            url: "https://static.canva.com/web/images/e01d35db7c198554ae022ee3216ee495.jpg",
+            image: "/assets/images/portfolio/portfolio1.jpg",
+            url: "",
             title: "Title",
             description: "A long description",
             caption: "A short description",
-            iframe: false,
         },
         {
             tag: "Typescript",
-            image: "/assets/images/certs/FullStackCert.jpg",
+            image: "/assets/images/portfolio/portfolio2.jpg",
             url: "",
             title: "Title",
             description: "A long description",
             caption: "A short description",
-            iframe: false,
         },
         {
             tag: "Python",
-            image: "/assets/images/certs/FullStackCert.jpg",
+            image: "/assets/images/portfolio/portfolio3.jpg",
             url: "",
             title: "Title",
             description: "A long description",
             caption: "A short description",
-            iframe: false,
         },
         {
-            tag: "C++",
-            image: "https://www.canva.com/design/DAGWysgrrxw/XCuqxWu-ydk02dCySa8FMQ/view?utm_content=DAGWysgrrxw&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h27d6aad5e1",
+            tag: "Python",
+            image: "/assets/images/portfolio/portfolio5.jpg",
             url: "",
             title: "Title",
             description: "A long description",
             caption: "A short description",
-            iframe: false,
-        },
-        {
-            tag: "Unreal Engine",
-            image: "/assets/images/certs/FullStackCert.jpg",
-            url: "",
-            title: "Title",
-            description: "A long description",
-            caption: "A short description",
-            iframe: false,
         },
     ],
 

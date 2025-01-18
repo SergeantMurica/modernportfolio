@@ -2,7 +2,7 @@
     position: fixed;
     margin: 50px auto;
     padding: 20px;
-    background-color: var(--background-color);
+    background-color: var(--container-color);
     border-radius: 10px;
     text-align: center;
     -webkit-box-shadow: 0 4px 8px 0 var(--shadow-color), 0 6px 20px 0 var(--shadow-color);

@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { NavLink, useLocation } from 'react-router-dom';
 import HomeIcon from '@mui/icons-material/Home';
 import NightsStayIcon from '@mui/icons-material/NightsStay';
@@ -7,12 +7,18 @@ import websiteData from '../../utils/websiteData.jsx';
 import CustomButton from '../Button/Button.jsx';
 import './NavigationBar.css';
 
-
 const NavigationBar = () => {
     const location = useLocation();
+
+    // Initialize dark mode from localStorage
     const [isDarkMode, setIsDarkMode] = useState(() => {
         return localStorage.getItem('theme') === 'dark';
     });
+
+    // Apply the theme class on mount
+    useEffect(() => {
+        document.body.classList.toggle('dark-mode', isDarkMode);
+    }, [isDarkMode]);
 
     const toggleTheme = () => {
         const newTheme = !isDarkMode;
@@ -38,11 +44,14 @@ const NavigationBar = () => {
                 ))}
             </div>
             <div>
-                <CustomButton text={isDarkMode ? "Light Mode" : "Dark Mode"} onClick={toggleTheme} icon={isDarkMode ? <LightModeIcon/> : <NightsStayIcon />}/>
+                <CustomButton
+                    text={isDarkMode ? "Light Mode" : "Dark Mode"}
+                    onClick={toggleTheme}
+                    icon={isDarkMode ? <LightModeIcon /> : <NightsStayIcon />}
+                />
             </div>
         </nav>
     );
 };
 
 export default NavigationBar;
-

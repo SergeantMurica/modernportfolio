@@ -18,7 +18,7 @@ const Profile = () => {
                 </div>
             </div>
             <figure className="profile-image">
-                <img src={'/assets/images/profileImage.png'} alt="Profile Image"/>
+                <img src={'/assets/images/profileImage.jpg'} alt="Profile Image"/>
             </figure>
             <div className="profile-information">
                 <BasicTimeline icon={<PersonOutlineIcon/>}>

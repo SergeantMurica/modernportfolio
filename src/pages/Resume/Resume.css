@@ -23,8 +23,6 @@
 .resume-text {
     color: var(--body-text-color);
     display: flex;
-    align-items: center;
-    justify-content: center;
     margin: auto;
     font-size: 12px;
     font-weight: 500;

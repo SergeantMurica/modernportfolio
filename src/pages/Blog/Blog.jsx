@@ -1,4 +1,4 @@
-import React, {useState} from 'react'
+import React, { useState } from 'react';
 import {
     Card,
     CardActionArea,
@@ -10,43 +10,50 @@ import {
     Tab,
     Tabs
 } from "@mui/material";
+import { useNavigate } from 'react-router-dom'; // Import useNavigate
 import blogData from "../../utils/blogData.jsx";
-import './Blog.css'
+import './Blog.css';
+
+
+
+
 
 const Blog = () => {
-
-
     const [tabValue, setTabValue] = useState("All");
+    const navigate = useNavigate();
 
+    const handleBlogClick = (blogId) => {
+        navigate(`/blog/${blogId}`);
+    };
 
     return (
         <div>
             <Container className="page-container">
                 <Grid2 container>
 
-                    {/*Title*/}
+                    {/* Title */}
                     <Grid2 item size={12}>
-                        <div  className="heading-text">
+                        <div className="heading-text">
                             <span></span>
                             Blog
                         </div>
                     </Grid2>
 
-
-                    {/*Tabs*/}
+                    {/* Tabs */}
                     <Grid2 item size={12}>
                         <Grid2 container spacing={1}>
                             <Grid2 item size={12}>
-                                <Tabs value={tabValue}
-                                      indicatorColor="white"
-                                      className="custom-tabs"
-                                      onChange={(event, newValue) => setTabValue(newValue)}
+                                <Tabs
+                                    value={tabValue}
+                                    indicatorColor="white"
+                                    className="custom-tabs"
+                                    onChange={(event, newValue) => setTabValue(newValue)}
                                 >
-                                    <Tab label="All"
-                                         value="All"
-                                         className={tabValue === "All" ? "custom-tab-active" : "custom-tab-inactive"}
+                                    <Tab
+                                        label="All"
+                                        value="All"
+                                        className={tabValue === "All" ? "custom-tab-active" : "custom-tab-inactive"}
                                     />
-
                                     {[...new Set(blogData.blogs.map((item) => item.tag))].map((tag) => (
                                         <Tab
                                             key={tag}
@@ -55,28 +62,26 @@ const Blog = () => {
                                             className={tabValue === tag ? "custom-tab-active" : "custom-tab-inactive"}
                                         />
                                     ))}
-
                                 </Tabs>
                             </Grid2>
                         </Grid2>
                     </Grid2>
 
-
-                    {/*blogs*/}
+                    {/* Blogs */}
                     <Grid2 item size={12}>
                         <Grid2 container spacing={1}>
                             {blogData.blogs.map((blog) => (
                                 <>
                                     {tabValue === blog.tag || tabValue === "All" ? (
-                                        <Grid2 item size={{xs: 12, sm: 6, md: 4, lg: 4}} className="blog-card">
+                                        <Grid2 item size={{ xs: 12, sm: 6, md: 4, lg: 4 }} className="blog-card">
                                             <Grow in timeout={1000}>
-                                                <Card onClick={() => window.location.href = `/blog/${blog.id}`}>
+                                                <Card onClick={() => handleBlogClick(blog.id)}>
                                                     <CardActionArea>
-                                                        <CardMedia className="blog-card-media"
-                                                                   image={blog.image}
-                                                                   title={blog.title}
+                                                        <CardMedia
+                                                            className="blog-card-media"
+                                                            image={blog.image}
+                                                            title={blog.title}
                                                         />
-
                                                         <CardContent>
                                                             <>
                                                                 <div className="blog-card-title">{blog.title}</div>
@@ -98,6 +103,7 @@ const Blog = () => {
                 </Grid2>
             </Container>
         </div>
-    )
-}
+    );
+};
+
 export default Blog;

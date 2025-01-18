@@ -1,23 +1,47 @@
 :root {
+    .dark-mode {
+        /* Core Colors */
+        --main-color: #2979FF;
+        --secondary-color: #4A90E2;
+
+        /* Text Colors */
+        --heading-text-color: #F0F4F8;
+        --body-text-color: #B0BEC5;
+        --caption-text-color: #90CAF9;
+        --active-link-color: #82B1FF;
+        --inactive-link-color: #4A90E2;
+
+        /* UI Elements */
+        --shadow-color: rgba(255, 255, 255, 0.1);
+        --border-color: #E0E0E0;
+        --container-color: grey;
+
+        /* Additional Colors */
+        --background-color: #121212;
+        --shading-color: rgba(255, 255, 255, 0.1);
+        --highlight-color: #50B5FF;
+
+    }
     /* Core Colors */
-    --main-color: #4A90E2; /* Vibrant blue for primary elements */
-    --secondary-color: #50E3C2; /* Teal for secondary accents */
+    --main-color: #4A90E2;
+    --secondary-color: #50B5FF;
 
     /* Text Colors */
-    --heading-text-color: #1A1A1A; /* Dark gray for headings */
-    --body-text-color: #4F4F4F; /* Neutral gray for body text */
-    --caption-text-color: lightslategray; /* Light gray for caption text */
-    --active-link-color: black; /* White for active states */
-    --inactive-link-color: #BDBDBD; /* Light gray for inactive links */
+    --heading-text-color: #1A1A1A;
+    --body-text-color: #4F4F4F;
+    --caption-text-color: #B0BEC5;
+    --active-link-color: #1565C0;
+    --inactive-link-color: #90CAF9;
 
     /* UI Elements */
-    --shadow-color: rgba(0, 0, 0, 0.31); /* Subtle shadow for depth */
-    --border-color: #E0E0E0; /* Light gray for borders */
+    --shadow-color: rgba(0, 0, 0, 0.31);
+    --border-color: #E0E0E0;
+    --container-color: #F9F9FA;
 
     /* Additional Colors */
-    --background-color: #F9F9F9; /* Soft off-white background */
-    --shading-color: rgba(0, 0, 0, 0.69); /* Soft off-white background */
-    --highlight-color: #FF6B6B; /* Red accent for important elements */
+    --background-color: #F5F8FA;
+    --shading-color: rgba(0, 0, 0, 0.69);
+    --highlight-color: #2979FF;
 
 }
 

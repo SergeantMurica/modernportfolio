@@ -22,14 +22,14 @@
 
 .timeline .timeline-dot-header {
     color: var(--main-color);
-    background-color: var(--secondary-color);
+    border-color: var(--main-color);
     font-size: small;
     padding: 1px;
 }
 
 .timeline .timeline-dot {
-    color: var(--main-color);
-    border-color: var(--secondary-color);
+    color: var(--container-color);
+    border-color: var(--main-color);
     padding: 1px;
 }
 

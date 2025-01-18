@@ -1,5 +1,5 @@
 .navbar {
-    background-color: var(--background-color);
+    background-color: var(--container-color);
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -49,7 +49,7 @@
 
 .nav-item {
     color: var(--inactive-link-color);
-    background-color: var(--background-color);
+    background-color: var(--container-color);
     text-decoration: none;
     font-size: 1rem;
     transition: color 0.3s;
@@ -58,7 +58,7 @@
 .nav-item:hover,
 .nav-item.active {
     color: var(--active-link-color);
-    background-color: var(--background-color);
+    background-color: var(--container-color);
 }
 
 

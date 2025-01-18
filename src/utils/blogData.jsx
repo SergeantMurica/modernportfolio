@@ -15,7 +15,7 @@ export default {
                 "One of the key features of React is its virtual DOM, which optimizes performance by updating only the parts of the UI that change.",
                 "React is maintained by Facebook and a large community of developers, making it a reliable choice for modern web development."
             ],
-            image: "https://static.canva.com/web/images/e01d35db7c198554ae022ee3216ee495.jpg"
+            image: "/assets/images/blogs/blog1.jpg"
         },
         {
             id: "react2",
@@ -29,7 +29,7 @@ export default {
                 "One of the key features of React is its virtual DOM, which optimizes performance by updating only the parts of the UI that change.",
                 "React is maintained by Facebook and a large community of developers, making it a reliable choice for modern web development."
             ],
-            image: "https://static.canva.com/web/images/e01d35db7c198554ae022ee3216ee495.jpg"
+            image: "/assets/images/blogs/blog2.jpg"
         },
         {
             id: "react25",
@@ -43,7 +43,7 @@ export default {
                 "One of the key features of React is its virtual DOM, which optimizes performance by updating only the parts of the UI that change.",
                 "React is maintained by Facebook and a large community of developers, making it a reliable choice for modern web development."
             ],
-            image: "https://static.canva.com/web/images/e01d35db7c198554ae022ee3216ee495.jpg"
+            image: "/assets/images/blogs/blog3.jpg"
         },
     ],
 
@@ -54,7 +54,7 @@ export default {
         content: [
             "We do not know how you made it here, but you got here! So welcome and I hope you find a way out!"
         ],
-        image: "https://static.canva.com/web/images/e01d35db7c198554ae022ee3216ee495.jpg"
+        image: "/assets/images/blogs/BlogNotFound.jpg"
     }
 
 

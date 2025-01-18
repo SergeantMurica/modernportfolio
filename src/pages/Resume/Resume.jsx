@@ -50,7 +50,7 @@ const Resume = () => {
                                                     title={resumeData.resume.education[key].major}
                                                     company={resumeData.resume.education[key].school}
                                                     date={resumeData.resume.education[key].date}
-                                                    text={resumeData.resume.education[key].minor}
+                                                    text={resumeData.resume.education[key].description}
                                                     last={resumeData.resume.education[key].last}
                                                 />
                                             </div>

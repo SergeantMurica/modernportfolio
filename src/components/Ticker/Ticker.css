@@ -1,7 +1,7 @@
 .ticker-container {
     overflow: hidden;
     white-space: nowrap;
-    background-color: var(--background-color);
+    background-color: var(--container-color);
     margin: 20px -24px 20px -24px;
     display: flex;
     align-items: center;
