@@ -4,7 +4,7 @@ import React from "react";
 export default {
     blogs : [
         {
-            id: 1,
+            id: "react",
             tag: "React.JS",
             title: "Introduction to React",
             date: "2025-01-01",
@@ -18,7 +18,7 @@ export default {
             image: "https://static.canva.com/web/images/e01d35db7c198554ae022ee3216ee495.jpg"
         },
         {
-            id: 2,
+            id: "react2",
             tag: "Python",
             title: "Introduction to React",
             date: "2025-01-01",
@@ -32,7 +32,7 @@ export default {
             image: "https://static.canva.com/web/images/e01d35db7c198554ae022ee3216ee495.jpg"
         },
         {
-            id: 3,
+            id: "react25",
             tag: "JavaScript",
             title: "Introduction to React",
             date: "2025-01-01",
@@ -45,7 +45,17 @@ export default {
             ],
             image: "https://static.canva.com/web/images/e01d35db7c198554ae022ee3216ee495.jpg"
         },
-    ]
+    ],
+
+    notFound: {
+        title: "Post Not Found",
+        date: "1025-01-02",
+        author: "Goblins",
+        content: [
+            "We do not know how you made it here, but you got here! So welcome and I hope you find a way out!"
+        ],
+        image: "https://static.canva.com/web/images/e01d35db7c198554ae022ee3216ee495.jpg"
+    }
 
 
 
